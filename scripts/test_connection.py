@@ -1,0 +1,1 @@
+# test Python connect to PostgreSQL
