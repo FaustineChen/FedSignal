@@ -4,8 +4,8 @@ services:
     image: postgres:16
     container_name: fedsignal-postgres
     environment:
-      POSTGRES_USER: fedsignal
-      POSTGRES_PASSWORD: password
+      POSTGRES_USER: fedsignal_user
+      POSTGRES_PASSWORD: fedsignal_password
       POSTGRES_DB: fedsignal_db
     ports:
       - "5432:5432"
