@@ -1,3 +1,3 @@
 # document ingestion logic
-    # read doc, clean data, store into document table
+    # read doc, clean data to fixed form, store into document table
     # create processing job
