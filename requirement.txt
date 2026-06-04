@@ -6,3 +6,4 @@ sqlalchemy              # Python SQL toolkit and Object Relational Mapper
 psycopg2-binary         # PostgreSQL adapter for Python
 python-dotenv           # reads key-value pairs from a .env file
 alembic
+pypdf                   # read pdf files
