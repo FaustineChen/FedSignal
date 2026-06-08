@@ -24,12 +24,17 @@ CREATE TABLE IF NOT EXISTS documents (
     source TEXT NOT NULL,
     speaker TEXT,
     speaker_position TEXT,
+    chair TEXT,
 
     source_url TEXT NOT NULL,
-    raw_content TEXT NOT NULL,
+    raw_file_path TEXT,
+    cleaned_file_path TEXT,
+    content TEXT NOT NULL,
 
     created_at TIMESTAMP NOT NULL DEFAULT NOW(),
-    updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+    updated_at TIMESTAMP NOT NULL DEFAULT NOW(),
+
+    CONSTRAINT unique_documents_source_url UNIQUE (source_url)
 );
 
 
