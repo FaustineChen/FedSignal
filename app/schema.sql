@@ -100,6 +100,9 @@ CREATE TABLE IF NOT EXISTS document_chunks (
     chunk_index INTEGER NOT NULL,
     chunk_text TEXT NOT NULL,
 
+    chunk_type TEXT NOT NULL DEFAULT 'body',
+    speaker TEXT,
+
     char_start INTEGER,
     char_end INTEGER,
 
@@ -114,7 +117,7 @@ CREATE TABLE IF NOT EXISTS document_chunks (
 -- keyword_occurences
 -- ==================
 
-CREATE TABLE IF NOT EXISTS keyword_occurences (
+CREATE TABLE IF NOT EXISTS keyword_occurrences (
     id SERIAL PRIMARY KEY,
 
     keyword_id INTEGER NOT NULL REFERENCES keyword_catalog(id) ON DELETE CASCADE,
