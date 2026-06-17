@@ -1,0 +1,294 @@
+keyword,category,description,term,match_type
+inflation,inflation_prices,References to inflation and overall price pressure.,inflation,word
+inflation expectations,inflation_prices,References to expected future inflation.,inflation expectations,exact_phrase
+inflation expectations,inflation_prices,References to expected future inflation.,inflation expectation,exact_phrase
+inflation expectations,inflation_prices,References to expected future inflation.,longer-term inflation expectations,exact_phrase
+inflation expectations,inflation_prices,References to expected future inflation.,long-term inflation expectations,exact_phrase
+inflation expectations,inflation_prices,References to expected future inflation.,longer run inflation expectations,exact_phrase
+inflation expectations,inflation_prices,References to expected future inflation.,longer-run inflation expectations,exact_phrase
+longer-run goal,inflation_prices,References to the Fed's longer-run inflation goal or objective.,longer-run goal,exact_phrase
+longer-run goal,inflation_prices,References to the Fed's longer-run inflation goal or objective.,longer run goal,exact_phrase
+longer-run goal,inflation_prices,References to the Fed's longer-run inflation goal or objective.,longer-run objective,exact_phrase
+longer-run goal,inflation_prices,References to the Fed's longer-run inflation goal or objective.,longer run objective,exact_phrase
+longer-run goal,inflation_prices,References to the Fed's longer-run inflation goal or objective.,longer-run inflation goal,exact_phrase
+longer-run goal,inflation_prices,References to the Fed's longer-run inflation goal or objective.,longer run inflation goal,exact_phrase
+longer-term expectations,inflation_prices,"References to longer-term expectations, especially inflation expectations.",longer-term expectations,exact_phrase
+longer-term expectations,inflation_prices,"References to longer-term expectations, especially inflation expectations.",longer term expectations,exact_phrase
+longer-term expectations,inflation_prices,"References to longer-term expectations, especially inflation expectations.",long-term expectations,exact_phrase
+longer-term expectations,inflation_prices,"References to longer-term expectations, especially inflation expectations.",long term expectations,exact_phrase
+PCE prices,inflation_prices,References to PCE price inflation measures.,PCE prices,exact_phrase
+PCE prices,inflation_prices,References to PCE price inflation measures.,PCE price index,exact_phrase
+PCE prices,inflation_prices,References to PCE price inflation measures.,PCE inflation,exact_phrase
+PCE prices,inflation_prices,References to PCE price inflation measures.,total PCE prices,exact_phrase
+PCE prices,inflation_prices,References to PCE price inflation measures.,core PCE prices,exact_phrase
+PCE prices,inflation_prices,References to PCE price inflation measures.,core PCE price index,exact_phrase
+PCE prices,inflation_prices,References to PCE price inflation measures.,core PCE inflation,exact_phrase
+energy prices,inflation_prices,References to energy prices and energy-driven price pressure.,energy price,exact_phrase
+energy prices,inflation_prices,References to energy prices and energy-driven price pressure.,energy prices,exact_phrase
+energy prices,inflation_prices,References to energy prices and energy-driven price pressure.,oil price,exact_phrase
+energy prices,inflation_prices,References to energy prices and energy-driven price pressure.,oil prices,exact_phrase
+energy prices,inflation_prices,References to energy prices and energy-driven price pressure.,gasoline price,exact_phrase
+energy prices,inflation_prices,References to energy prices and energy-driven price pressure.,gasoline prices,exact_phrase
+price stability,inflation_prices,References to the price-stability side of the Fed's mandate.,price stability,exact_phrase
+price stability,inflation_prices,References to the price-stability side of the Fed's mandate.,stable prices,exact_phrase
+disinflation,inflation_prices,References to slowing inflation or disinflationary progress.,disinflation,exact_phrase
+disinflation,inflation_prices,References to slowing inflation or disinflationary progress.,disinflationary,exact_phrase
+disinflation,inflation_prices,References to slowing inflation or disinflationary progress.,disinflationary process,exact_phrase
+2 percent,inflation_prices,References to the Fed's 2 percent inflation objective.,2 percent,exact_phrase
+2 percent,inflation_prices,References to the Fed's 2 percent inflation objective.,two percent,exact_phrase
+2 percent,inflation_prices,References to the Fed's 2 percent inflation objective.,2 percent objective,exact_phrase
+2 percent,inflation_prices,References to the Fed's 2 percent inflation objective.,2 percent goal,exact_phrase
+labor market,labor_market,References to labor market conditions.,labor market,exact_phrase
+labor market,labor_market,References to labor market conditions.,labor markets,exact_phrase
+labor market,labor_market,References to labor market conditions.,labor market conditions,exact_phrase
+nonfarm payrolls,labor_market,References to nonfarm payroll employment.,nonfarm payroll,exact_phrase
+nonfarm payrolls,labor_market,References to nonfarm payroll employment.,nonfarm payrolls,exact_phrase
+nonfarm payrolls,labor_market,References to nonfarm payroll employment.,payroll employment,exact_phrase
+unemployment,labor_market,References to unemployment and the unemployment rate.,unemployment,exact_phrase
+unemployment,labor_market,References to unemployment and the unemployment rate.,unemployment rate,exact_phrase
+unemployment,labor_market,References to unemployment and the unemployment rate.,jobless rate,exact_phrase
+labor force,labor_market,References to the labor force and participation.,labor force,exact_phrase
+labor force,labor_market,References to the labor force and participation.,labor force participation,exact_phrase
+labor force,labor_market,References to the labor force and participation.,participation rate,exact_phrase
+employment,labor_market,References to employment conditions.,employment,exact_phrase
+employment,labor_market,References to employment conditions.,maximum employment,exact_phrase
+job gains,labor_market,References to job gains and hiring strength.,job gain,exact_phrase
+job gains,labor_market,References to job gains and hiring strength.,job gains,exact_phrase
+job gains,labor_market,References to job gains and hiring strength.,employment gains,exact_phrase
+job gains,labor_market,References to job gains and hiring strength.,payroll gains,exact_phrase
+wages,labor_market,References to wages and wage growth.,wage,word
+wages,labor_market,References to wages and wage growth.,wages,word
+wages,labor_market,References to wages and wage growth.,wage growth,exact_phrase
+wages,labor_market,References to wages and wage growth.,compensation,word
+labor demand,labor_market,References to demand for labor.,labor demand,exact_phrase
+labor demand,labor_market,References to demand for labor.,demand for labor,exact_phrase
+labor supply,labor_market,References to supply of labor.,labor supply,exact_phrase
+labor supply,labor_market,References to supply of labor.,supply of labor,exact_phrase
+interest rate,monetary_policy,References to interest rates generally.,interest rate,exact_phrase
+interest rate,monetary_policy,References to interest rates generally.,interest rates,exact_phrase
+interest rate,monetary_policy,References to interest rates generally.,rate,word
+interest rate,monetary_policy,References to interest rates generally.,rates,word
+federal funds rate,monetary_policy,References to the federal funds rate and its target range.,federal funds rate,exact_phrase
+federal funds rate,monetary_policy,References to the federal funds rate and its target range.,federal funds target range,exact_phrase
+federal funds rate,monetary_policy,References to the federal funds rate and its target range.,target range for the federal funds rate,exact_phrase
+federal funds rate,monetary_policy,References to the federal funds rate and its target range.,target range,exact_phrase
+federal funds rate,monetary_policy,References to the federal funds rate and its target range.,policy rate,exact_phrase
+federal funds rate,monetary_policy,References to the federal funds rate and its target range.,policy rates,exact_phrase
+policy stance,monetary_policy,References to the stance of monetary policy.,policy stance,exact_phrase
+policy stance,monetary_policy,References to the stance of monetary policy.,stance of monetary policy,exact_phrase
+policy stance,monetary_policy,References to the stance of monetary policy.,monetary policy stance,exact_phrase
+policy stance,monetary_policy,References to the stance of monetary policy.,be prepared to adjust the stance,exact_phrase
+policy stance,monetary_policy,References to the stance of monetary policy.,adjust the stance,exact_phrase
+neutral rate,monetary_policy,References to neutral policy rate estimates.,neutral,word
+neutral rate,monetary_policy,References to neutral policy rate estimates.,neutral rate,exact_phrase
+neutral rate,monetary_policy,References to neutral policy rate estimates.,neutral rates,exact_phrase
+neutral rate,monetary_policy,References to neutral policy rate estimates.,neutral policy rate,exact_phrase
+neutral rate,monetary_policy,References to neutral policy rate estimates.,neutral interest rate,exact_phrase
+neutral rate,monetary_policy,References to neutral policy rate estimates.,plausible estimates of neutral,exact_phrase
+neutral rate,monetary_policy,References to neutral policy rate estimates.,r-star,exact_phrase
+neutral rate,monetary_policy,References to neutral policy rate estimates.,r*,exact_phrase
+tight,monetary_policy,"Broad references to tight conditions; may include policy, financial, credit, or labor market contexts.",tight,word
+tight,monetary_policy,"Broad references to tight conditions; may include policy, financial, credit, or labor market contexts.",tighter,word
+tight,monetary_policy,"Broad references to tight conditions; may include policy, financial, credit, or labor market contexts.",tightest,word
+tight financial conditions,monetary_policy,References to tight financial or credit conditions.,tight financial conditions,exact_phrase
+tight financial conditions,monetary_policy,References to tight financial or credit conditions.,tighter financial conditions,exact_phrase
+tight financial conditions,monetary_policy,References to tight financial or credit conditions.,tight credit conditions,exact_phrase
+tight financial conditions,monetary_policy,References to tight financial or credit conditions.,tighter credit conditions,exact_phrase
+tight labor market,labor_market,References to tight labor market conditions.,tight labor market,exact_phrase
+tight labor market,labor_market,References to tight labor market conditions.,tighter labor market,exact_phrase
+tight labor market,labor_market,References to tight labor market conditions.,tight labor markets,exact_phrase
+tightening,monetary_policy,References to monetary policy tightening.,tighten,word
+tightening,monetary_policy,References to monetary policy tightening.,tightens,word
+tightening,monetary_policy,References to monetary policy tightening.,tightened,word
+tightening,monetary_policy,References to monetary policy tightening.,tightening,word
+tightening,monetary_policy,References to monetary policy tightening.,cumulative tightening,exact_phrase
+tightening,monetary_policy,References to monetary policy tightening.,policy tightening,exact_phrase
+restrictive,monetary_policy,References to restrictive monetary policy.,restrictive,word
+restrictive,monetary_policy,References to restrictive monetary policy.,sufficiently restrictive,exact_phrase
+restrictive,monetary_policy,References to restrictive monetary policy.,more restrictive,exact_phrase
+restrictive,monetary_policy,References to restrictive monetary policy.,less restrictive,exact_phrase
+restrictive,monetary_policy,References to restrictive monetary policy.,restriction,word
+restrictive,monetary_policy,References to restrictive monetary policy.,restrictions,word
+additional adjustments,monetary_policy,References to further policy adjustments.,additional adjustment,exact_phrase
+additional adjustments,monetary_policy,References to further policy adjustments.,additional adjustments,exact_phrase
+additional adjustments,monetary_policy,References to further policy adjustments.,further adjustment,exact_phrase
+additional adjustments,monetary_policy,References to further policy adjustments.,further adjustments,exact_phrase
+extent and timing,monetary_policy,References to the extent and timing of policy changes.,the extent and timing,exact_phrase
+extent and timing,monetary_policy,References to the extent and timing of policy changes.,extent and timing,exact_phrase
+balance sheet,balance_sheet,References to the Federal Reserve balance sheet.,balance sheet,exact_phrase
+balance sheet,balance_sheet,References to the Federal Reserve balance sheet.,balance sheets,exact_phrase
+securities holdings,balance_sheet,References to securities holdings on the Fed balance sheet.,securities holdings,exact_phrase
+securities holdings,balance_sheet,References to securities holdings on the Fed balance sheet.,holdings of securities,exact_phrase
+securities holdings,balance_sheet,References to securities holdings on the Fed balance sheet.,Treasury securities,exact_phrase
+securities holdings,balance_sheet,References to securities holdings on the Fed balance sheet.,agency debt,exact_phrase
+securities holdings,balance_sheet,References to securities holdings on the Fed balance sheet.,agency mortgage-backed securities,exact_phrase
+securities holdings,balance_sheet,References to securities holdings on the Fed balance sheet.,agency MBS,exact_phrase
+securities holdings,balance_sheet,References to securities holdings on the Fed balance sheet.,MBS,word
+runoff,balance_sheet,References to balance sheet runoff or redemptions.,runoff,word
+runoff,balance_sheet,References to balance sheet runoff or redemptions.,run-off,word
+runoff,balance_sheet,References to balance sheet runoff or redemptions.,redemption,word
+runoff,balance_sheet,References to balance sheet runoff or redemptions.,redemptions,word
+runoff,balance_sheet,References to balance sheet runoff or redemptions.,reinvest,word
+runoff,balance_sheet,References to balance sheet runoff or redemptions.,reinvestment,word
+runoff,balance_sheet,References to balance sheet runoff or redemptions.,reinvestments,word
+reserve balances,balance_sheet,References to reserve balances and IORB.,reserve balance,exact_phrase
+reserve balances,balance_sheet,References to reserve balances and IORB.,reserve balances,exact_phrase
+reserve balances,balance_sheet,References to reserve balances and IORB.,interest rate paid on reserve balances,exact_phrase
+reserve balances,balance_sheet,References to reserve balances and IORB.,IORB,word
+quantitative tightening,balance_sheet,References to quantitative tightening.,quantitative tightening,exact_phrase
+quantitative tightening,balance_sheet,References to quantitative tightening.,QT,word
+economic activity,economic_activity,References to current economic activity.,economic activity,exact_phrase
+economic activity,economic_activity,References to current economic activity.,activity,word
+economic outlook,economic_activity,References to the economic outlook.,economic outlook,exact_phrase
+economic outlook,economic_activity,References to the economic outlook.,outlook,word
+expand,economic_activity,References to expansion or growth.,expand,word
+expand,economic_activity,References to expansion or growth.,expands,word
+expand,economic_activity,References to expansion or growth.,expanded,word
+expand,economic_activity,References to expansion or growth.,expanding,word
+expand,economic_activity,References to expansion or growth.,expansion,word
+expand,economic_activity,References to expansion or growth.,expansions,word
+solid pace,economic_activity,References to activity growing at a solid pace.,solid pace,exact_phrase
+solid pace,economic_activity,References to activity growing at a solid pace.,solid rate,exact_phrase
+modest,economic_activity,References to modest growth or modest changes.,modest,word
+modest,economic_activity,References to modest growth or modest changes.,modestly,word
+slowdown,economic_activity,References to slowing activity or slowdown.,slow,word
+slowdown,economic_activity,References to slowing activity or slowdown.,slows,word
+slowdown,economic_activity,References to slowing activity or slowdown.,slowed,word
+slowdown,economic_activity,References to slowing activity or slowdown.,slowing,word
+slowdown,economic_activity,References to slowing activity or slowdown.,slowdown,word
+slowdown,economic_activity,References to slowing activity or slowdown.,slowdowns,word
+slowdown,economic_activity,References to slowing activity or slowdown.,slow down,exact_phrase
+slowdown,economic_activity,References to slowing activity or slowdown.,slowed down,exact_phrase
+slowdown,economic_activity,References to slowing activity or slowdown.,slowing down,exact_phrase
+robust,economic_activity,References to robust strength.,robust,word
+robust,economic_activity,References to robust strength.,robustly,word
+resilient,economic_activity,References to resilience in the economy or sectors.,resilient,word
+resilient,economic_activity,References to resilience in the economy or sectors.,resilience,word
+firm,economic_activity,References to firm conditions or firming activity.,firm,word
+firm,economic_activity,References to firm conditions or firming activity.,firmed,word
+firm,economic_activity,References to firm conditions or firming activity.,firming,word
+firm,economic_activity,References to firm conditions or firming activity.,firmer,word
+growth,economic_activity,References to economic growth.,growth,word
+growth,economic_activity,References to economic growth.,GDP,word
+growth,economic_activity,References to economic growth.,gross domestic product,exact_phrase
+consumer spending,economic_activity,References to consumer spending.,consumer spending,exact_phrase
+consumer spending,economic_activity,References to consumer spending.,household spending,exact_phrase
+consumer spending,economic_activity,References to consumer spending.,spending,word
+business investment,economic_activity,References to business investment.,business investment,exact_phrase
+business investment,economic_activity,References to business investment.,investment,word
+housing sector,economic_activity,References to housing conditions.,housing,word
+housing sector,economic_activity,References to housing conditions.,housing sector,exact_phrase
+housing sector,economic_activity,References to housing conditions.,residential investment,exact_phrase
+manufacturing,economic_activity,References to manufacturing activity.,manufacturing,word
+manufacturing,economic_activity,References to manufacturing activity.,factory sector,exact_phrase
+risks,risk_uncertainty,References to risks generally.,risk,word
+risks,risk_uncertainty,References to risks generally.,risks,word
+balance of risks,risk_uncertainty,References to the balance of risks.,balance of risks,exact_phrase
+balance of risks,risk_uncertainty,References to the balance of risks.,risk balance,exact_phrase
+uncertainty,risk_uncertainty,References to uncertainty.,uncertainty,word
+uncertainty,risk_uncertainty,References to uncertainty.,uncertain,word
+uncertainty,risk_uncertainty,References to uncertainty.,uncertainties,word
+uncertainty,risk_uncertainty,References to uncertainty.,unclear,word
+attentive,risk_uncertainty,References to being attentive to risks.,attentive,word
+attentive,risk_uncertainty,References to being attentive to risks.,highly attentive,exact_phrase
+monitor,risk_uncertainty,References to monitoring data or risks.,monitor,word
+monitor,risk_uncertainty,References to monitoring data or risks.,monitors,word
+monitor,risk_uncertainty,References to monitoring data or risks.,monitored,word
+monitor,risk_uncertainty,References to monitoring data or risks.,monitoring,word
+monitor,risk_uncertainty,References to monitoring data or risks.,closely monitor,exact_phrase
+monitor,risk_uncertainty,References to monitoring data or risks.,continue to monitor,exact_phrase
+inflation risks,risk_uncertainty,References to inflation risks.,inflation risk,exact_phrase
+inflation risks,risk_uncertainty,References to inflation risks.,inflation risks,exact_phrase
+downside risks,risk_uncertainty,References to downside risks.,downside risk,exact_phrase
+downside risks,risk_uncertainty,References to downside risks.,downside risks,exact_phrase
+upside risks,risk_uncertainty,References to upside risks.,upside risk,exact_phrase
+upside risks,risk_uncertainty,References to upside risks.,upside risks,exact_phrase
+financial risks,risk_uncertainty,References to financial risks.,financial risk,exact_phrase
+financial risks,risk_uncertainty,References to financial risks.,financial risks,exact_phrase
+tariffs,geopolitics_trade,References to tariffs and tariff effects.,tariff,word
+tariffs,geopolitics_trade,References to tariffs and tariff effects.,tariffs,word
+Middle East,geopolitics_trade,References to the Middle East.,Middle East,exact_phrase
+Russia,geopolitics_trade,References to Russia.,Russia,word
+Russia,geopolitics_trade,References to Russia.,Russian,word
+Ukraine,geopolitics_trade,References to Ukraine.,Ukraine,word
+Ukraine,geopolitics_trade,References to Ukraine.,Ukrainian,word
+geopolitical,geopolitics_trade,References to geopolitical risks and developments.,geopolitical,word
+geopolitical,geopolitics_trade,References to geopolitical risks and developments.,geopolitical risk,exact_phrase
+geopolitical,geopolitics_trade,References to geopolitical risks and developments.,geopolitical risks,exact_phrase
+geopolitical,geopolitics_trade,References to geopolitical risks and developments.,geopolitical developments,exact_phrase
+supply chain,geopolitics_trade,References to supply chains and disruptions.,supply chain,exact_phrase
+supply chain,geopolitics_trade,References to supply chains and disruptions.,supply chains,exact_phrase
+supply chain,geopolitics_trade,References to supply chains and disruptions.,supply disruption,exact_phrase
+supply chain,geopolitics_trade,References to supply chains and disruptions.,supply disruptions,exact_phrase
+supply chain,geopolitics_trade,References to supply chains and disruptions.,supply constraints,exact_phrase
+trade policy,geopolitics_trade,References to trade policy and trade tensions.,trade policy,exact_phrase
+trade policy,geopolitics_trade,References to trade policy and trade tensions.,trade policies,exact_phrase
+trade policy,geopolitics_trade,References to trade policy and trade tensions.,trade tensions,exact_phrase
+immigration,geopolitics_trade,References to immigration as a labor supply or macro factor.,immigration,word
+immigration,geopolitics_trade,References to immigration as a labor supply or macro factor.,immigrant,word
+immigration,geopolitics_trade,References to immigration as a labor supply or macro factor.,immigrants,word
+ongoing,communication_guidance,References to ongoing processes or ongoing assessment.,ongoing,word
+meeting-by-meeting,communication_guidance,References to meeting-by-meeting policy decisions.,meeting-by-meeting,exact_phrase
+meeting-by-meeting,communication_guidance,References to meeting-by-meeting policy decisions.,meeting by meeting,exact_phrase
+meeting-by-meeting,communication_guidance,References to meeting-by-meeting policy decisions.,meeting[- ]by[- ]meeting,regex
+incoming data,communication_guidance,References to incoming data.,incoming data,exact_phrase
+data dependent,communication_guidance,References to data dependence.,data dependent,exact_phrase
+data dependent,communication_guidance,References to data dependence.,data-dependent,exact_phrase
+data dependent,communication_guidance,References to data dependence.,data dependence,exact_phrase
+data dependent,communication_guidance,References to data dependence.,data-dependence,exact_phrase
+carefully assess,communication_guidance,References to careful assessment of data or risks.,carefully assess,exact_phrase
+carefully assess,communication_guidance,References to careful assessment of data or risks.,carefully assessing,exact_phrase
+carefully assess,communication_guidance,References to careful assessment of data or risks.,careful assessment,exact_phrase
+promote progress,communication_guidance,References to promoting progress toward goals.,promote progress,exact_phrase
+promote progress,communication_guidance,References to promoting progress toward goals.,promotes progress,exact_phrase
+promote progress,communication_guidance,References to promoting progress toward goals.,promoted progress,exact_phrase
+promote progress,communication_guidance,References to promoting progress toward goals.,promoting progress,exact_phrase
+adjust stance,communication_guidance,References to adjusting the stance of policy.,be prepared to adjust the stance,exact_phrase
+adjust stance,communication_guidance,References to adjusting the stance of policy.,prepared to adjust the stance,exact_phrase
+adjust stance,communication_guidance,References to adjusting the stance of policy.,adjust the stance,exact_phrase
+adjust stance,communication_guidance,References to adjusting the stance of policy.,adjusting the stance,exact_phrase
+elevated,tone_direction,References to elevated levels or elevated risks.,elevated,word
+boosted,tone_direction,References to boosted or upward pressure.,boost,word
+boosted,tone_direction,References to boosted or upward pressure.,boosts,word
+boosted,tone_direction,References to boosted or upward pressure.,boosted,word
+boosted,tone_direction,References to boosted or upward pressure.,boosting,word
+impede,tone_direction,References to impeding activity or progress.,impede,word
+impede,tone_direction,References to impeding activity or progress.,impedes,word
+impede,tone_direction,References to impeding activity or progress.,impeded,word
+impede,tone_direction,References to impeding activity or progress.,impeding,word
+moved up,tone_direction,References to moving up or upward revisions.,move up,exact_phrase
+moved up,tone_direction,References to moving up or upward revisions.,moves up,exact_phrase
+moved up,tone_direction,References to moving up or upward revisions.,moved up,exact_phrase
+moved up,tone_direction,References to moving up or upward revisions.,moving up,exact_phrase
+push up,tone_direction,References to pushing prices or rates upward.,push up,exact_phrase
+push up,tone_direction,References to pushing prices or rates upward.,pushes up,exact_phrase
+push up,tone_direction,References to pushing prices or rates upward.,pushed up,exact_phrase
+push up,tone_direction,References to pushing prices or rates upward.,pushing up,exact_phrase
+risen,tone_direction,References to increases or things having risen.,rise,word
+risen,tone_direction,References to increases or things having risen.,rises,word
+risen,tone_direction,References to increases or things having risen.,rose,word
+risen,tone_direction,References to increases or things having risen.,risen,word
+risen,tone_direction,References to increases or things having risen.,have risen,exact_phrase
+risen,tone_direction,References to increases or things having risen.,has risen,exact_phrase
+risen,tone_direction,References to increases or things having risen.,had risen,exact_phrase
+eased,tone_direction,References to easing or abating pressure.,ease,word
+eased,tone_direction,References to easing or abating pressure.,eases,word
+eased,tone_direction,References to easing or abating pressure.,eased,word
+eased,tone_direction,References to easing or abating pressure.,easing,word
+resume,tone_direction,References to resuming activity or progress.,resume,word
+resume,tone_direction,References to resuming activity or progress.,resumes,word
+resume,tone_direction,References to resuming activity or progress.,resumed,word
+resume,tone_direction,References to resuming activity or progress.,resuming,word
+stable,tone_direction,References to stability or stable conditions.,stable,word
+stable,tone_direction,References to stability or stable conditions.,stability,word
+stable,tone_direction,References to stability or stable conditions.,stabilization,word
+stable,tone_direction,References to stability or stable conditions.,stabilize,word
+stable,tone_direction,References to stability or stable conditions.,stabilizes,word
+stable,tone_direction,References to stability or stable conditions.,stabilized,word
+stable,tone_direction,References to stability or stable conditions.,stabilizing,word
+rapid,tone_direction,References to rapid changes.,rapid,word
+rapid,tone_direction,References to rapid changes.,rapidly,word
+significant,tone_direction,References to significant magnitude.,significant,word
+significant,tone_direction,References to significant magnitude.,significantly,word
+forceful,tone_direction,References to forceful policy action or response.,forceful,word
+forceful,tone_direction,References to forceful policy action or response.,forcefully,word

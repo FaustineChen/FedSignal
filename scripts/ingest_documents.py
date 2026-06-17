@@ -99,7 +99,7 @@ def upsert_documents(rows: list[dict]) -> None:
                 "content": stmt.excluded.content,
                 "updated_at": func.now(),
             },
-            where=(
+            where=(     # at least one of the data is different
                 (Document.title.is_distinct_from(stmt.excluded.title)) |
                 (Document.document_type.is_distinct_from(stmt.excluded.document_type)) |
                 (Document.published_date.is_distinct_from(stmt.excluded.published_date)) |
