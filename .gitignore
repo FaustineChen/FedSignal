@@ -7,3 +7,4 @@ venv/
 postgres_data/
 data/raw/
 data/processed/
+data/metadata/

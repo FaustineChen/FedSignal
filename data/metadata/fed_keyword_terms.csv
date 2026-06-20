@@ -229,7 +229,6 @@ immigration,geopolitics_trade,References to immigration as a labor supply or mac
 immigration,geopolitics_trade,References to immigration as a labor supply or macro factor.,immigrants,word
 ongoing,communication_guidance,References to ongoing processes or ongoing assessment.,ongoing,word
 meeting-by-meeting,communication_guidance,References to meeting-by-meeting policy decisions.,meeting-by-meeting,exact_phrase
-meeting-by-meeting,communication_guidance,References to meeting-by-meeting policy decisions.,meeting by meeting,exact_phrase
 meeting-by-meeting,communication_guidance,References to meeting-by-meeting policy decisions.,meeting[- ]by[- ]meeting,regex
 incoming data,communication_guidance,References to incoming data.,incoming data,exact_phrase
 data dependent,communication_guidance,References to data dependence.,data dependent,exact_phrase

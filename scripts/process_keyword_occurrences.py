@@ -122,6 +122,7 @@ def fetch_chunks(conn, document_id=None, chunk_id=None):
 # sentence index start from 0 within each chunk
 def find_occurrences_in_chunk(chunk, keyword_terms):
     occurrences = []
+    seen_occurrences = set()
 
     chunk_id = chunk["chunk_id"]
     document_id = chunk["document_id"]
@@ -129,11 +130,28 @@ def find_occurrences_in_chunk(chunk, keyword_terms):
 
     sentences = split_into_sentences(chunk_text)
 
+    # longer terms first
+    keyword_terms = sorted(
+        keyword_terms,
+        key=lambda term: len(term["term"]),
+        reverse=True,
+    )
+
     for sentence_index, sentence in enumerate(sentences):
         for term in keyword_terms:
             pattern = term["pattern"]
 
             for match in pattern.finditer(sentence):
+                dedup_key = (
+                    term["keyword_id"],
+                    sentence_index,
+                )
+
+                if dedup_key in seen_occurrences:
+                    continue
+
+                seen_occurrences.add(dedup_key)
+                
                 occurrences.append(
                     {
                         "keyword_id": term["keyword_id"],
