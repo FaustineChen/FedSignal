@@ -1,10 +1,16 @@
 # input: documents table, contect
 # outpiut: document_chunks table
 import re
-import os
+import sys
 import argparse
-from dotenv import load_dotenv
-from sqlalchemy import create_engine, text
+from pathlib import Path
+from sqlalchemy import text
+
+# import prot project root
+project_root = Path(__file__).resolve().parents[1]
+sys.path.append(str(project_root))
+
+from app.db import engine
 
 
 def protect_abbreviation(text : str) -> str:
@@ -363,75 +369,99 @@ def replace_document_chunks(conn, document_id: int, chunks: list[dict]) -> None:
         ), rows
     )
 
+# core logic
+# process one or all documents
+def generate_chunks_for_documents(
+    conn,
+    dry_run: bool = False,
+    document_id: int | None = None,
+    max_chars: int = 1200,
+) -> None:
+    documents = fetch_documents(conn, document_id=document_id)
+    
+    if not documents:
+        print("No documents found.")
+        return
+    
+    total_chunks = 0
+
+    for doc in documents:
+        doc_id = doc["id"]
+        title = doc["title"]
+        document_type = doc["document_type"]
+        content = doc["content"]
+
+        chunks = chunk_document(
+            content=content,
+            document_type=document_type,
+            max_chars=max_chars
+        )
+
+        # print doc metadata
+        print("=" * 20)
+        print(f"Document ID: {doc_id}")
+        print(f"Title: {title}")
+        print(f"Type: {document_type}")
+        print(f"Generated chunks: {len(chunks)}")
+
+        # print preview
+        if chunks:
+            first_chunk = chunks[0]
+            print("--- First chunk preview ---")
+            print(f"chunk_type: {first_chunk.get('chunk_type')}")
+            print(f"speaker: {first_chunk.get('speaker')}")
+            print(first_chunk.get("content", "")[:500])
+
+        if dry_run:
+            print("Dry run: not writting chunks to database.")
+        else:
+            replace_document_chunks(
+                conn=conn,
+                document_id=doc_id,
+                chunks=chunks
+            )
+            print("Inserted chunks into document_chunks.")
+        
+        total_chunks += len(chunks)
+    
+    print("=" * 20)
+    print(f"Processed documents: {len(documents)}")
+    print(f"Total generated chunks: {total_chunks}")
+
+    if dry_run:
+        print("Dry run complete. No database changes were made.")
+    else:
+        print("Done. document_chunks table has been updated.")
+
+# CLI wrapper
+# open engine.begin() itself
 def process_documents(
     dry_run: bool = False,
     document_id: int | None = None,
     max_chars: int = 1200,
 ) -> None:
-    load_dotenv()
-
-    db_url = os.getenv("DATABASE_URL")
-    if not db_url:
-        raise ValueError("DATABASE_URL is not set in .env")
-
-    engine = create_engine(db_url)
-
     with engine.begin() as conn:
-        documents = fetch_documents(conn, document_id=document_id)
-        
-        if not documents:
-            print("No documents found.")
-            return
-        
-        total_chunks = 0
+        generate_chunks_for_documents(
+            conn,
+            dry_run=dry_run,
+            document_id=document_id,
+            max_chars=max_chars,
+        )
 
-        for doc in documents:
-            doc_id = doc["id"]
-            title = doc["title"]
-            document_type = doc["document_type"]
-            content = doc["content"]
+# worker wrapper
+# process one document
+def generate_chunks_for_document(
+    conn,
+    document_id: int,
+    max_chars: int = 1200   
+) -> None:
+    generate_chunks_for_documents(
+        conn=conn,
+        dry_run=False,
+        document_id=document_id,
+        max_chars=max_chars
+    )
 
-            chunks = chunk_document(
-                content=content,
-                document_type=document_type,
-                max_chars=max_chars
-            )
-
-            # print doc metadata
-            print("=" * 20)
-            print(f"Document ID: {doc_id}")
-            print(f"Title: {title}")
-            print(f"Type: {document_type}")
-            print(f"Generated chunks: {len(chunks)}")
-
-            # print preview
-            if chunks:
-                first_chunk = chunks[0]
-                print("--- First chunk preview ---")
-                print(f"chunk_type: {first_chunk.get('chunk_type')}")
-                print(f"speaker: {first_chunk.get('speaker')}")
-                print(first_chunk.get("content", "")[:500])
-
-            if dry_run:
-                print("Dry run: not writting chunks to database.")
-            else:
-                replace_document_chunks(
-                    conn=conn,
-                    document_id=doc_id,
-                    chunks=chunks
-                )
-                print("Inserted chunks into document_chunks.")
-            
-            total_chunks += len(chunks)
-        
-        print("=" * 20)
-        print(f"Processed documents: {len(documents)}")
-        print(f"Total generated chunks: {total_chunks}")
-
-        if dry_run:
-            print("Dry run complete. No database changes were made.")
-        else:
-            print("Done. document_chunks table has been updated.")
 
 def main():
     # create command line parser

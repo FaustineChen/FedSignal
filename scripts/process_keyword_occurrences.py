@@ -221,45 +221,73 @@ def insert_occurrences(conn, occurrences):
         ), occurrences
     )
 
+# core logic
+def extract_keyword_occurrences(
+    conn,
+    dry_run: bool = False,
+    document_id: int | None = None,
+    chunk_id: int | None = None,
+) -> None:
+    keyword_terms = load_key_word_terms(conn)
+    chunks = fetch_chunks(conn, document_id=document_id, chunk_id=chunk_id)
+
+    print(f"Loaded keyword terms: {len(keyword_terms)}")
+    print(f"Loaded chunks: {len(chunks)}")
+
+    all_occurrences = []
+
+    for chunk in chunks:
+        occurrences = find_occurrences_in_chunk(chunk, keyword_terms)
+        all_occurrences.extend(occurrences)
+
+    print(f"Generated occurrences: {len(all_occurrences)}")
+
+    if all_occurrences:
+        print("\nPreview first 10 occurrences:")
+        for occurrence in all_occurrences[:10]:
+            print("=" * 20)
+            print(f"document_id: {occurrence['document_id']}")
+            print(f"chunk_id: {occurrence['chunk_id']}")
+            print(f"keyword_id: {occurrence['keyword_id']}")
+            print(f"keyword_term_id: {occurrence['keyword_term_id']}")
+            print(f"matched_text: {occurrence['matched_text']}")
+            print(f"sentence_index: {occurrence['sentence_index']}")
+            print(f"char_start: {occurrence['char_start']}")
+            print(f"char_end: {occurrence['char_end']}")
+            print(f"sentence: {occurrence['sentence'][:300]}")
+
+    if dry_run:
+        print("\nDry run complete. No database changes were made.")
+        return
+
+    delete_existing_occurrences(conn, chunks)
+    insert_occurrences(conn, all_occurrences)
+
+    print("\nInserted keyword occurrences into database.")
+
+# CLI wrapper
+# open engine.begin() itself
 def process_keyword_occurrences(dry_run=False, document_id=None, chunk_id=None):
     with engine.begin() as conn:
-        keyword_terms = load_key_word_terms(conn)
-        chunks = fetch_chunks(conn, document_id=document_id, chunk_id=chunk_id)
+        extract_keyword_occurrences(
+            conn=conn,
+            dry_run=dry_run,
+            document_id=document_id,
+            chunk_id=chunk_id
+        )
 
-        print(f"Loaded keyword terms: {len(keyword_terms)}")
-        print(f"Loaded chunks: {len(chunks)}")
-
-        all_occurrences = []
-
-        for chunk in chunks:
-            occurrences = find_occurrences_in_chunk(chunk, keyword_terms)
-            all_occurrences.extend(occurrences)
-
-        print(f"Generated occurrences: {len(all_occurrences)}")
-
-        if all_occurrences:
-            print("\nPreview first 10 occurrences:")
-            for occurrence in all_occurrences[:10]:
-                print("=" * 20)
-                print(f"document_id: {occurrence['document_id']}")
-                print(f"chunk_id: {occurrence['chunk_id']}")
-                print(f"keyword_id: {occurrence['keyword_id']}")
-                print(f"keyword_term_id: {occurrence['keyword_term_id']}")
-                print(f"matched_text: {occurrence['matched_text']}")
-                print(f"sentence_index: {occurrence['sentence_index']}")
-                print(f"char_start: {occurrence['char_start']}")
-                print(f"char_end: {occurrence['char_end']}")
-                print(f"sentence: {occurrence['sentence'][:300]}")
-
-        if dry_run:
-            print("\nDry run complete. No database changes were made.")
-            return
-
-        delete_existing_occurrences(conn, chunks)
-        insert_occurrences(conn, all_occurrences)
-
-        print("\nInserted keyword occurrences into database.")
-
+# worker wrapper
+# process one document
+def extract_occurrences_for_document(
+    conn,
+    document_id: int,
+) -> None:
+    extract_keyword_occurrences(
+        conn=conn,
+        dry_run=False,
+        document_id=document_id,
+        chunk_id=None,
+    )
     
 def main():
     parser = argparse.ArgumentParser(

@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS processing_jobs (
 
     CONSTRAINT valid_job_type CHECK (
         job_type IN (
-            'generate_chunks', 'extract_keywords', 'summarize', 'classify_tone'
+            'process_document', 'generate_chunks', 'extract_keywords', 'summarize', 'classify_tone'
         )
     ),
 
