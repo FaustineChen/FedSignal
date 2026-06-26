@@ -7,8 +7,8 @@ from pathlib import Path
 from sqlalchemy import text
 
 # import prot project root
-project_root = Path(__file__).resolve().parents[1]
-sys.path.append(str(project_root))
+# project_root = Path(__file__).resolve().parents[1]
+# sys.path.append(str(project_root))
 
 from app.db import engine
 
