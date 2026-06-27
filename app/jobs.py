@@ -2,6 +2,25 @@
 from sqlalchemy import text
 
 def create_processing_job(conn, document_id: int, job_type: str = "process_document"):
+    existing_job_id = conn.execute(
+        text("""
+            SELECT id
+            FROM processing_jobs
+            WHERE document_id = :document_id
+              AND job_type = :job_type
+              AND job_status IN ('pending', 'running')
+            ORDER BY created_at DESC
+            LIMIT 1
+        """),
+        {
+            "document_id": document_id,
+            "job_type": job_type,
+        },
+    ).scalar_one_or_none()
+
+    if existing_job_id is not None:
+        return existing_job_id
+    
     result = conn.execute(
         text(
             """
@@ -11,7 +30,7 @@ def create_processing_job(conn, document_id: int, job_type: str = "process_docum
                 job_status
             )
             VALUES (
-                :documentt_id,
+                :document_id,
                 :job_type,
                 'pending'
             )

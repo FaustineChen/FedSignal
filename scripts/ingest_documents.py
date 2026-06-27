@@ -5,10 +5,13 @@ import csv
 from pathlib import Path
 from datetime import datetime
 from typing import Optional
+
 from sqlalchemy.sql import func
 from sqlalchemy.dialects.postgresql import insert
+
 from app.db import SessionLocal
 from app.models import Document
+from app.jobs import create_processing_job
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 
@@ -113,11 +116,26 @@ def upsert_documents(rows: list[dict]) -> None:
                 (Document.cleaned_file_path.is_distinct_from(stmt.excluded.cleaned_file_path)) |
                 (Document.content.is_distinct_from(stmt.excluded.content))
             ),
-        )
+        ).returning(Document.id)        # only return doc_id need to insert or update
 
-        session.execute(stmt)
+        result = session.execute(stmt)
+        changed_document_ids = result.scalars().all()
+        created_job_count = 0
+
+        for document_id in changed_document_ids:
+            job_id = create_processing_job(
+                conn=session,
+                document_id=document_id,
+                job_type="process_document"
+            )
+            created_job_count += 1
+            print(f"Created job {job_id} for document {document_id}.")
+
         session.commit()
-        print(f"Upserted {len(rows)} documents.")
+        
+        print(f"Read {len(rows)} documents from CSV.")
+        print(f"Upserted {len(changed_document_ids)} documents.")
+        print(f"Created {created_job_count} processing jobs.")
 
     except Exception:
         session.rollback()
