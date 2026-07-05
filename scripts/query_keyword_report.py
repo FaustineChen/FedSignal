@@ -1,4 +1,7 @@
 import argparse
+import csv
+import re
+from pathlib import Path
 from sqlalchemy import text
 
 from app.db import engine
@@ -67,6 +70,18 @@ def parse_args():
         "--document-id",
         type=int,
         help="Filter by document ID"
+    )
+
+    parser.add_argument(
+        "--output",
+        choices=["text", "csv"],
+        default="test",
+        help="Output format"
+    )
+
+    parser.add_argument(
+        "--output-file",
+        help="CSV output file path"
     )
     
     args = parser.parse_args()
@@ -413,6 +428,51 @@ def print_summary(rows, summary_by):
                 f"{row['occurrence_count']}"
             )
 
+def safe_filename_part(value):
+    value = value.lower().strip()
+    value = re.sub(r"[^a-z0-9]+", "_", value)
+    value = value.strip("_")
+    return value
+
+# create file name if not provide
+# reports/<keyword_or_category name>_<keyword_or_category type>_<summary/matches>.csv
+def get_output_file(args):
+    if args.output_file:
+        return args.output_file
+
+    if args.keyword:
+        target = safe_filename_part(args.keyword)
+        target_type = "keyword"
+    else:
+        target = safe_filename_part(args.category)
+        target_type = "category"
+
+    if args.summary:
+        report_type = "summary"
+    else:
+        report_type = "matches"
+
+    return f"reports/{target}_{target_type}_{report_type}.csv"
+
+def write_csv(rows, output_file):
+    if not rows:
+        print("No results found.")
+        return
+    
+    output_path = Path(output_file)
+
+    if output_path.parent != Path("."):
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # header
+    fieldnames = list(rows[0].keys())
+
+    with output_path.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows([dict(row) for row in rows])
+
+    print(f"Wrote {len(rows)} rows to {output_path}")
 
 def main():
     args = parse_args()
@@ -430,7 +490,15 @@ def main():
             limit=args.limit,
         )
 
-        print_summary(rows, args.summary_by)
+        if args.output == "csv":
+            if args.output_file:
+                output_file = args.output_file
+            else:
+                output_file = get_output_file(args)
+            write_csv(rows, output_file)
+        else:
+            print_summary(rows, args.summary_by)
+
     else:
         rows = query_matched_sentences(
             keyword=args.keyword,
@@ -443,7 +511,14 @@ def main():
             limit=args.limit,
         )
 
-        print_matched_sentences(rows)
+        if args.output == "csv":
+            if args.output_file:
+                output_file = args.output_file
+            else:
+                output_file = get_output_file(args)
+            write_csv(rows, output_file)
+        else:
+            print_matched_sentences(rows)
 
 
 if __name__ == "__main__":
