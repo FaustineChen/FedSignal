@@ -7,11 +7,17 @@
 # user upload Fed speech，main.py accept request and call ingest.py
 
 from fastapi import FastAPI
-from app.routes.reports import router
+from app.routes.reports import router as reports_router
+from app.routes.jobs import router as jobs_router
 
 app = FastAPI()
 
 app.include_router(
-    router,
+    reports_router,
     prefix="/api/reports"
+)
+
+app.include_router(
+    jobs_router,
+    prefix="/api/jobs"
 )
