@@ -17,6 +17,7 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 
 METADATA_CSV = BASE_DIR / "data" / "metadata" / "fed_documents.csv"
 CLEANED_TEXT_DIR = BASE_DIR / "data" / "cleaned"
+RAW_PDF_DIR = BASE_DIR / "data" / "raw"
 
 def parse_date(value: Optional[str]):
     if value is None:
@@ -52,6 +53,8 @@ def load_rows_from_csv() -> list[dict]:
         for row_num, row in enumerate(reader, start=2):
             try:
                 filename = row["filename"].strip()
+                raw_path = RAW_PDF_DIR / Path(filename).with_suffix(".pdf")
+                cleaned_path = CLEANED_TEXT_DIR / filename
                 content = read_cleaned_text(filename)
 
                 rows.append({
@@ -65,8 +68,8 @@ def load_rows_from_csv() -> list[dict]:
                     "speaker_position": optional_str(row.get("speaker_position")),
                     "chair": optional_str(row.get("chair")),
                     "source_url": row["source_url"].strip(),
-                    "raw_file_path": optional_str(row.get("raw_file_path")),
-                    "cleaned_file_path": optional_str(row.get("cleaned_file_path")),
+                    "raw_file_path": str(raw_path),
+                    "cleaned_file_path": str(cleaned_path),
                     "content": content,
                 })
             except Exception as e:

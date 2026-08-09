@@ -114,46 +114,5 @@ def clean_texts(input_dir: str, output_dir: str):
         print(f"Saved to: {output_file}")
 
 
-
-    """
-    text_path1 = "data/processed/fomc_minutes_20260429.txt"
-    text_path2 = "data/processed/fomc_statement_20260429.txt"
-    text_path3 = "data/processed/fomc_press_conference_20260429.txt"
-    #text = Path(text_path1).read_text(encoding="utf-8")
-    #text = Path(text_path2).read_text(encoding="utf-8")
-    text = Path(text_path3).read_text(encoding="utf-8")
-    text = text.replace("/n", "")
-    text = text.replace("\r\n", "\n").replace("\r", "\n")
-
-    lines = text.split("\n")
-
-    for i, line in enumerate(lines[:80]):
-        line = line.strip()
-        line = remove_minutes_headers_footers(line)
-
-        # Page 1 / Page 1 of 10
-        if re.fullmatch(r"Page\s+\d+(\s+of\s+\d+)?", line, flags=re.IGNORECASE):
-            continue
-
-        # one line page -2-, -0-
-        if re.fullmatch(r"-\d+-", line):
-            continue
-
-        # begining page -2-
-        line = re.sub(r"^-\d+-\s*", "", line)
-
-        # one line page 0, 1
-        if re.fullmatch(r"\d+", line):
-            continue
-
-        # (more)
-        if line.lower() == "(more)":
-            continue
-
-        print(i, repr(line))
-
-    """
-
-
 if __name__ == "__main__":
     clean_texts(input_dir = "data/processed", output_dir = "data/cleaned")

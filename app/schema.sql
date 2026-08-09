@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS documents (
     source_url TEXT NOT NULL,
     raw_file_path TEXT,
     cleaned_file_path TEXT,
-    content TEXT NOT NULL,
+    content TEXT,
 
     created_at TIMESTAMP NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMP NOT NULL DEFAULT NOW(),

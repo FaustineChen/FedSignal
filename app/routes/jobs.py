@@ -3,7 +3,7 @@ from fastapi import APIRouter, HTTPException, status, Query
 from typing import Literal
 
 from app.db import engine
-from app.jobs import get_jobs, get_job_by_id
+from queries.job_queries import get_jobs, get_job_by_id
 
 router = APIRouter()
 

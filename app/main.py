@@ -9,6 +9,7 @@
 from fastapi import FastAPI
 from app.routes.reports import router as reports_router
 from app.routes.jobs import router as jobs_router
+from app.routes.documents import router as documents_router
 
 app = FastAPI()
 
@@ -20,4 +21,9 @@ app.include_router(
 app.include_router(
     jobs_router,
     prefix="/api/jobs"
+)
+
+app.include_router(
+    documents_router,
+    prefix="/api/documents"
 )
