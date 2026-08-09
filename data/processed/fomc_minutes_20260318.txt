@@ -7,7 +7,8 @@ FOMC
 FEDERAL RESERVE SYSTEM  
 Minutes of the 
 Federal Open Market Committee 
-March 17–18, 2026 /n 
+March 17–18, 2026 
+ 
  
  
 Minutes of the Federal Open Market 
@@ -39,7 +40,8 @@ this year, compared with one 25 basis point cut previously.  The distribution of
 outcomes early next year implied by options prices shifted notably to higher values and became more 
  
 1 The Federal Open Market Committee is referenced as the “FOMC” and the “Committee” in these minutes; the Board of 
-Governors of the Federal Reserve System is referenced as the “Board” in these minutes. /n2    March 17–18, 2026 
+Governors of the Federal Reserve System is referenced as the “Board” in these minutes. 
+2    March 17–18, 2026 
  
 dispersed; as a result, the probability of rate hikes through that period increased to about 30 percent.  
 By contrast, the median of the modal paths reported in the Desk survey continued to show two 
@@ -74,7 +76,8 @@ reserve management purchases (RMPs).  Over the intermeeting period, the effectiv
 rate remained unchanged at 1 basis point below the interest on reserve balances (IORB) rate, and 
 rates on repurchase agreements (repo) remained generally near the IORB rate.  Overnight reverse 
 repo operations saw minimal usage except at month-ends, and standing repo operations were used on 
-only a couple of days, which were days with relatively high volumes of Treasury securities settlements.  /nMinutes of the Federal Open Market Committee    3 
+only a couple of days, which were days with relatively high volumes of Treasury securities settlements.  
+Minutes of the Federal Open Market Committee    3 
  
 On one of those days, standing repo usage reached $30 billion, the third-largest volume since the 
 inception of the standing operations.  The manager saw this development, together with interdealer 
@@ -108,7 +111,8 @@ attributed to the effects of higher tariffs.  Core services price inflation had 
 earlier, led by a slowing in housing services price inflation, while core nonhousing services price 
 inflation was little changed.  Based on data from the consumer price index and the producer price 
 index, the staff estimated that total PCE price inflation was 2.8 percent in February, while core PCE 
-price inflation was 3.0 percent. /n4    March 17–18, 2026 
+price inflation was 3.0 percent. 
+4    March 17–18, 2026 
  
 The unemployment rate was 4.4 percent in February, the same as its level in September of 2025.  The 
 average monthly change in total payroll employment was low over January and February.  The effects 
@@ -142,7 +146,8 @@ higher, largely reflecting a shift in the anticipated timing of easing toward th
 two-year nominal Treasury yield increased, on net, primarily driven by higher inflation compensation, 
 consistent with rising near-term inflation concerns tied to surging energy prices following 
 developments in the Middle East.  By contrast, the 10-year nominal Treasury yield was little changed 
-on net.   /nMinutes of the Federal Open Market Committee    5 
+on net.   
+Minutes of the Federal Open Market Committee    5 
  
 Broad equity price indexes declined and the one-month option-implied volatility on the S&P 500 index 
 increased notably, as concerns about Middle East developments appeared to weaken investor 
@@ -177,7 +182,8 @@ declined to around the 25th percentile of its post-GFC range.  Market-implied me
 expected defaults were little changed and were near the median of their historical distributions.  
 Likewise, the credit performance of leveraged loans was little changed.  Overall delinquency rates for 
 small businesses, CRE, mortgages insured by the Federal Housing Administration, and consumer 
-loans remained elevated.  In addition, investor concerns about private credit appeared to be /n6    March 17–18, 2026 
+loans remained elevated.  In addition, investor concerns about private credit appeared to be 
+6    March 17–18, 2026 
  
 increasing because of the sector’s high exposure to software-related business loans that were 
 vulnerable to AI disruption.   
@@ -210,7 +216,8 @@ provided their individual assessments of the level of uncertainty and the balanc
 with their projections.  The Summary of Economic Projections was released to the public following the 
 conclusion of the meeting. 
 Participants generally observed that overall inflation remained above the Committee’s 2 percent 
-longer-run goal.  Some participants remarked that further progress in reducing inflation had been /nMinutes of the Federal Open Market Committee    7 
+longer-run goal.  Some participants remarked that further progress in reducing inflation had been 
+Minutes of the Federal Open Market Committee    7 
  
 absent in recent months.  Some participants noted that the rate of increase in core goods prices 
 remained well above the pace likely to be consistent with the sustainable achievement of the 
@@ -246,7 +253,8 @@ continued to suggest that the labor market was broadly in balance, with the low 
 roughly in line with slower labor force growth.  Some of these participants commented that the 
 February payroll employment data were held down by a strike in the health-care sector and by the 
 effects of unusually harsh winter weather.  Several other participants, however, highlighted signs of 
-potential softening in the labor market, including a slight increase in the unemployment rate among /n8    March 17–18, 2026 
+potential softening in the labor market, including a slight increase in the unemployment rate among 
+8    March 17–18, 2026 
  
 prime-age workers, the concentration of job growth in the health-care sector— excluding the effects of 
 the February strike— and in a few other sectors, and survey measures of job availability that had 
@@ -281,7 +289,8 @@ developments in the Middle East had raised the uncertainty surrounding their out
 activity and had increased the associated downside risks. 
 In their consideration of monetary policy at this meeting, participants noted that inflation remained 
 above the Committee’s 2 percent objective and that available indicators suggested that economic 
-activity had been expanding at a solid pace.  They observed that job gains had remained low and that /nMinutes of the Federal Open Market Committee    9 
+activity had been expanding at a solid pace.  They observed that job gains had remained low and that 
+Minutes of the Federal Open Market Committee    9 
  
 the unemployment rate had been little changed in recent months.  Participants agreed that 
 uncertainty about the economic outlook remained elevated and that the conflict in the Middle East 
@@ -317,7 +326,8 @@ conflict in the Middle East could lead to a further softening in labor market co
 warrant additional rate cuts, as substantially higher oil prices could reduce households’ purchasing 
 power, tighten financial conditions, and reduce growth abroad.  Many participants pointed to the risk 
 of inflation remaining elevated for longer than expected amid a persistent increase in oil prices, which 
-could call for rate increases to help bring inflation down to the Committee’s 2 percent objective and /n10    March 17–18, 2026 
+could call for rate increases to help bring inflation down to the Committee’s 2 percent objective and 
+10    March 17–18, 2026 
  
 keep longer-term inflation expectations firmly anchored.  Most participants reiterated, however, that it 
 was too early to know how developments in the Middle East would affect the U.S. economy and judged 
@@ -350,7 +360,8 @@ employment and to returning inflation to the Committee’s 2 percent objective.
 Members agreed that in assessing the appropriate stance of monetary policy, the Committee would 
 continue to monitor the implications of incoming information for the economic outlook.  They would be 
 prepared to adjust the stance of monetary policy as appropriate if risks emerged that could impede 
-the attainment of the Committee’s goals.  Members also agreed that their assessments would take /nMinutes of the Federal Open Market Committee    11 
+the attainment of the Committee’s goals.  Members also agreed that their assessments would take 
+Minutes of the Federal Open Market Committee    11 
  
 into account a wide range of information, including readings on labor market conditions, inflation 
 pressures and inflation expectations, and financial and international developments. 
@@ -382,7 +393,8 @@ funds rate at 3½ to 3¾ percent.  In considering the extent and timing of addit
 adjustments to the target range for the federal funds rate, the Committee will carefully assess 
 incoming data, the evolving outlook, and the balance of risks.  The Committee is strongly 
 committed to supporting maximum employment and returning inflation to its 2 percent 
-objective. /n12    March 17–18, 2026 
+objective. 
+12    March 17–18, 2026 
  
 In assessing the appropriate stance of monetary policy, the Committee will continue to 
 monitor the implications of incoming information for the economic outlook.  The Committee 
@@ -415,7 +427,8 @@ Jerome H. Powell, Chair
 John C. Williams, Vice Chair 
 Michael S. Barr 
 Michelle W. Bowman 
-Lisa D. Cook /nMinutes of the Federal Open Market Committee    13 
+Lisa D. Cook 
+Minutes of the Federal Open Market Committee    13 
  
 Beth M. Hammack 
 Philip N. Jefferson 
@@ -455,7 +468,8 @@ Laura J. Feiveson, Special Adviser to the Board, Division of Board Members, Boar
 Andrew Figura, Senior Associate Director, Division of Research and Statistics, Board 
 Andrew T. Foerster, Senior Research Advisor, Federal Reserve Bank of San Francisco 
  
-2 Attended through the discussion of developments in financial markets and open market operations. /n14    March 17–18, 2026 
+2 Attended through the discussion of developments in financial markets and open market operations. 
+14    March 17–18, 2026 
  
 Glenn Follette, Associate Director, Division of Research and Statistics, Board 
 Shigeru Fujita, Senior Economic Advisor and Economist I, Federal Reserve Bank of Philadelphia 
@@ -489,7 +503,8 @@ Damjan Pfajfar, Vice President, Federal Reserve Bank of Cleveland
 Eugenio P. Pinto, Special Adviser to the Board, Division of Board Members, Board 
 Zeynep Senyuz, Special Adviser to the Board, Division of Board Members, Board 
  
-3 Attended from the discussion of the economic and financial situation through the end of the meeting.  /nMinutes of the Federal Open Market Committee    15 
+3 Attended from the discussion of the economic and financial situation through the end of the meeting.  
+Minutes of the Federal Open Market Committee    15 
  
 A. Lee Smith, Senior Vice President, Federal Reserve Bank of Kansas City 
 Francisco Vazquez-Grande, Group Manager, Division of Monetary Affairs, Board 

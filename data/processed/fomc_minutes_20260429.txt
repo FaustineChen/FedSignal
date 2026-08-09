@@ -2,7 +2,8 @@ FOMC
 FEDERAL RESERVE SYSTEM
 Minutes of the 
 Federal Open Market Committee 
-April 28–29, 2026 /nMinutes of the Federal Open Market 
+April 28–29, 2026 
+Minutes of the Federal Open Market 
 Committee 
 April 28–29, 2026 
 A joint meeting of the Federal Open Market Committee and the Board of Governors of the Federal 
@@ -28,7 +29,8 @@ that market participants anticipated little change this year in the target range
 rate, and options prices implied around a 30 percent probability of a rate hike by the first quarter of 
 2027.  In the Desk survey, the median of the modal paths continued to show two 25 basis point rate 
 1 The Federal Open Market Committee is referenced as the “FOMC” and the “Committee” in these minutes; the Board of 
-Governors of the Federal Reserve System is referenced as the “Board” in these minutes. /n2    April 28–29, 2026 
+Governors of the Federal Reserve System is referenced as the “Board” in these minutes. 
+2    April 28–29, 2026 
  
 reductions over the next year, but respondents now expected them to occur later than in the previous 
 survey, with rate cuts expected in the third or fourth quarter of 2026 and the first quarter of 2027.  
@@ -62,7 +64,8 @@ period.  The effective federal funds rate (EFFR) had remained 1 basis point belo
 reserve balances (IORB) rate.  Repurchase agreement (repo) rates remained very close to the IORB 
 rate on average.  The quarter-end date and the April tax date were not associated with significant 
 money market pressures.  The overnight reverse repurchase agreement (ON RRP) facility generally 
-saw minimal usage over the intermeeting period.  Excluding trades related to participation /nMinutes of the Federal Open Market Committee    3 
+saw minimal usage over the intermeeting period.  Excluding trades related to participation 
+Minutes of the Federal Open Market Committee    3 
  
 requirements, usage of standing repurchase agreement (SRP) operations was limited to the key tax 
 date of April 15.  Repeating the pattern observed in recent months, SRP usage on that date occurred 
@@ -95,7 +98,8 @@ Framework Agreement of 1994.  The votes to renew the Federal Reserve’s partici
 standing arrangements occur annually at the April or May FOMC meeting.  
 By unanimous vote, the Committee ratified the Desk’s domestic transactions over the intermeeting 
 period.  There were no intervention operations in foreign currencies for the System’s account during 
-the intermeeting period. /n4    April 28–29, 2026 
+the intermeeting period. 
+4    April 28–29, 2026 
  
 Staff Review of the Economic Situation 
 The information available at the time of the meeting indicated that inflation remained elevated and 
@@ -128,7 +132,8 @@ Continued strong demand for high-tech goods supported Asian exports.  Growth in 
 appeared solid, supported by strong external demand and a moderate recovery in domestic demand.  
 By contrast, activity in Mexico was held down by continued weakness in the automotive sector.  
 Recent survey data pointed to strains from the conflict in the Middle East, with European and Asian 
-firms reporting a notable lengthening of supplier delivery times and a surge in input prices. /nMinutes of the Federal Open Market Committee    5 
+firms reporting a notable lengthening of supplier delivery times and a surge in input prices. 
+Minutes of the Federal Open Market Committee    5 
  
 Foreign headline inflation had generally been running close to central bank targets, but incoming 
 March data pointed to a marked rise in inflation abroad driven by the run-up in energy prices.  Over the 
@@ -161,7 +166,8 @@ average, exhibiting only modest pressures over March quarter-end.  On the April 
 funding market rates rose somewhat as reserves declined sharply, and there was modest take-up of 
 SRP operations. 
 Financing conditions in domestic credit markets remained somewhat restrictive for small businesses 
-and households but were generally accommodative for larger businesses and municipalities.  /n6    April 28–29, 2026 
+and households but were generally accommodative for larger businesses and municipalities.  
+6    April 28–29, 2026 
  
 Borrowing costs were little changed in most sectors and remained elevated relative to their average 
 levels since the Global Financial Crisis (GFC).   
@@ -195,7 +201,8 @@ business debt growth had been subdued in recent years, private credit had grown 
  
 2 The SLOOS results reported are based on banks’ responses, weighted by each bank’s outstanding loans in the respective loan 
 category, and might therefore differ from the results reported in the published SLOOS, which are based on banks’ unweighted 
-responses. /nMinutes of the Federal Open Market Committee    7 
+responses. 
+Minutes of the Federal Open Market Committee    7 
  
 private credit vehicles experienced net outflows in the first quarter amid credit quality concerns 
 caused in part by the potential for AI to disrupt business models in some industries, notably software. 
@@ -228,7 +235,8 @@ inflation projection were seen as skewed to the upside:  With inflation having r
 2 percent over the past five years, with further increases in inflation likely to occur as a result of the 
 conflict in the Middle East, and with emergent price pressures in a few categories that appeared 
 unrelated to tariffs or energy prices, the staff viewed the possibility that inflation would be more 
-persistent than anticipated as a salient risk. /n8    April 28–29, 2026 
+persistent than anticipated as a salient risk. 
+8    April 28–29, 2026 
  
 Participants’ Views on Current Conditions and the Economic Outlook 
 Participants observed that overall inflation had moved up, in part because of recent global energy 
@@ -262,7 +270,8 @@ and other commodities could remain elevated for longer than expected.  In such s
 participants expected continued upward pressure on inflation arising from supply chain disruptions, 
 high energy prices, or the pass-through of higher input costs to other prices.  The vast majority of 
 participants noted an increased risk that inflation would take longer to return to the Committee’s 
-2 percent objective than they had previously expected. /nMinutes of the Federal Open Market Committee    9 
+2 percent objective than they had previously expected. 
+Minutes of the Federal Open Market Committee    9 
  
 With regard to the labor market, participants observed that the unemployment rate had been little 
 changed in recent months, while job gains had remained low on average.  Most participants judged 
@@ -297,7 +306,8 @@ large amount of current domestic oil production or the relatively low share of c
 spending on oil.  Most participants remarked that the developments in the Middle East had 
 contributed to the uncertainty surrounding the outlook for economic activity, and several of these 
 participants also noted that business contacts had emphasized heightened uncertainty about the 
-economic outlook.   /n10    April 28–29, 2026 
+economic outlook.   
+10    April 28–29, 2026 
  
 In their discussion of financial stability, several participants noted that asset valuations remained 
 elevated and that such conditions heightened the possibility of sharp corrections should adverse 
@@ -333,7 +343,8 @@ uncertainty about the economic outlook.  Against this backdrop, almost all parti
 maintaining the current target range for the federal funds rate at this meeting.  Participants generally 
 judged that the current policy rate was within the range of plausible estimates of its neutral level and 
 that the Committee still remained well positioned to base the extent and timing of adjustments to the 
-policy rate on incoming data, the evolving outlook, and the balance of risks.  They remarked that /nMinutes of the Federal Open Market Committee    11 
+policy rate on incoming data, the evolving outlook, and the balance of risks.  They remarked that 
+Minutes of the Federal Open Market Committee    11 
  
 holding the policy rate steady would allow the Committee to gather additional information on how 
 developments in the Middle East and other factors were affecting the economic outlook before  
@@ -367,7 +378,8 @@ tools, including the role of SRP operations in the implementation of monetary po
 connection between liquidity tools, liquidity regulations, and the demand for reserves. 
 Committee Policy Actions 
 In their discussions of monetary policy for this meeting, members agreed that recent indicators 
-suggested that economic activity had been expanding at a solid pace.  They noted that job gains had /n12    April 28–29, 2026 
+suggested that economic activity had been expanding at a solid pace.  They noted that job gains had 
+12    April 28–29, 2026 
  
 remained low, on average, and that the unemployment rate had been little changed in recent months.  
 Members agreed that inflation was elevated, in part reflecting the recent increase in global energy 
@@ -400,7 +412,8 @@ target range of 3½ to 3¾ percent.
 of 3.5 percent and with a per-counterparty limit of $160 billion per day. 
 • Increase the System Open Market Account holdings of securities through purchases of 
 Treasury bills and, if needed, other Treasury securities with remaining maturities of 
-3 years or less to maintain an ample level of reserves. /nMinutes of the Federal Open Market Committee    13 
+3 years or less to maintain an ample level of reserves. 
+Minutes of the Federal Open Market Committee    13 
  
 • Roll over at auction all principal payments from the Federal Reserve’s holdings of 
 Treasury securities.  Reinvest all principal payments from the Federal Reserve’s holdings 
@@ -433,7 +446,8 @@ funds rate by ¼ percentage point at this meeting and Beth M. Hammack, Neel Kash
 Logan, who supported maintaining the target range for the federal funds rate but  did not support 
 inclusion of an easing bias in the statement at this time.   
 Consistent with the Committee’s decision to leave the target range for the federal funds rate 
-unchanged, the Board of Governors of the Federal Reserve System voted unanimously to maintain the /n14    April 28–29, 2026 
+unchanged, the Board of Governors of the Federal Reserve System voted unanimously to maintain the 
+14    April 28–29, 2026 
  
 interest rate paid on reserve balances at 3.65 percent, effective April 30, 2026.  The Board of 
 Governors of the Federal Reserve System voted unanimously to approve the establishment of the 
@@ -474,7 +488,8 @@ Knotek II, and Andrea Raffo, Associate Economists
 Roberto Perli, Manager, System Open Market Account 
 Julie Ann Remache, Deputy Manager, System Open Market Account 
 Jose Acosta, Senior System Engineer II, Division of Information Technology, Board  
-Ozge Akinci Emekli, Research Department Head, Federal Reserve Bank of New York  /nMinutes of the Federal Open Market Committee    15 
+Ozge Akinci Emekli, Research Department Head, Federal Reserve Bank of New York  
+Minutes of the Federal Open Market Committee    15 
  
 Gene Amromin, Senior Vice President, Federal Reserve Bank of Chicago 
 Philippe Andrade, Vice President, Federal Reserve Bank of Boston 
@@ -511,7 +526,8 @@ Kurt Kostyu,8 Capital Markets Trading Principal, Federal Reserve Bank of New Yor
 5 Attended the discussion of economic developments and the outlook. 
 6 Attended the discussion of the economic and financial situation through the end of the meeting. 
 7 Attended Wednesday’s session only. 
-8 Attended through the discussion of economic developments and the outlook. /n16    April 28–29, 2026 
+8 Attended through the discussion of economic developments and the outlook. 
+16    April 28–29, 2026 
  
 Anna R. Kovner, Executive Vice President, Federal Reserve Bank of Richmond 
 Christopher J. Kurz, Assistant Director, Division of Research and Statistics, Board  
@@ -548,7 +564,8 @@ Paula Tkac, Director of Research, Federal Reserve Bank of Atlanta
 policy through the end of the meeting. 
 10 Attended through the discussion of developments in financial markets and open market operations, and from the discussion 
 of the economic and financial situation through the end of the meeting. 
-11 Attended through the discussion of the economic and financial situation. /nMinutes of the Federal Open Market Committee    17 
+11 Attended through the discussion of the economic and financial situation. 
+Minutes of the Federal Open Market Committee    17 
  
 Skander J. Van den Heuvel, Associate Director, Division of Financial Stability, Board  
 Annette Vissing-Jørgensen, Senior Adviser, Division of Monetary Affairs, Board 

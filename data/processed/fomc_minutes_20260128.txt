@@ -7,7 +7,8 @@ FOMC
 FEDERAL RESERVE SYSTEM  
 Minutes of the 
 Federal Open Market Committee 
-January 27–28, 2026 /nM
+January 27–28, 2026 
+M
 inutes of the Federal Open Market 
 Committee 
 January 27–28, 2026 
@@ -31,7 +32,8 @@ Neel Kashkari, President of the Federal Reserve Bank of Minneapolis, with Mary C
 the Federal Reserve Bank of San Francisco, as alternate. 
 1 The Federal Open Market Committee is referenced as the “FOMC” and the “Committee” in these minutes; the Board of 
 Governors of the Federal Reserve System is referenced as the “Board” in these minutes. 
-2 Committee organizational documents are available at www.federalreserve.gov/monetarypolicy/rules_authorizations.htm. /n2    January 27–28, 2026 
+2 Committee organizational documents are available at www.federalreserve.gov/monetarypolicy/rules_authorizations.htm. 
+2    January 27–28, 2026 
 By unanimous vote, the following officers of the Committee were selected to serve until the selection 
 of their successors at the first regularly scheduled meeting of the Committee in 2027: 
 Jerome H. Powell  Chair 
@@ -62,7 +64,8 @@ transactions for the System Open Market Account (SOMA).
 By unanimous vote, the Committee selected Roberto Perli and Julie Ann Remache to serve at the 
 pleasure of the Committee as manager and deputy manager of the SOMA, respectively, on the 
 understanding that these selections were subject to being satisfactory to the Federal Reserve Bank of 
-New York.  /nMinutes of the Federal Open Market Committee    3 
+New York.  
+Minutes of the Federal Open Market Committee    3 
 Secretary’s note:  The Federal Reserve Bank of New York subsequently sent advice 
 that the selections indicated previously were satisfactory. 
 By unanimous vote, the Committee approved the FOMC Authorizations and Continuing Directives for 
@@ -95,7 +98,8 @@ compensation continued to decline amid lower-than-expected consumer price index 
 lower energy prices, and lower-than-anticipated pass-through of tariffs to customers; forward rates 
 suggested that near-term inflation would stabilize close to current levels for the rest of the year.  
 Model-based measures of short-term inflation expectations also declined some over the intermeeting 
-period, with forward rates suggesting further modest declines over the course of this year.  The /n4    January 27–28, 2026 
+period, with forward rates suggesting further modest declines over the course of this year.  The 
+4    January 27–28, 2026 
 Treasury market continued to function well amid low volatility.  In light of the growing portion of 
 Treasury securities that is financed using repos, the manager noted the importance of the stability of 
 the repo market for the continued smooth functioning of the Treasury market. 
@@ -129,7 +133,8 @@ centrally cleared repo, and the overall preparedness of investors for year-end t
 The manager noted that the changes to standing repo operations implemented in December might 
 have made market participants more willing to participate in these operations, as suggested by 
 increased utilization relative to the pre-December period when market rates exceeded the rate on 
-standing repo operations.  Market contacts mentioned that the removal of the aggregate limit, the /nMinutes of the Federal Open Market Committee    5 
+standing repo operations.  Market contacts mentioned that the removal of the aggregate limit, the 
+Minutes of the Federal Open Market Committee    5 
 clarifications that these operations are intended for monetary policy implementation purposes, and 
 the statement by the Chair that the operations are expected to be used when “economically sensible” 
 were particularly helpful factors.   
@@ -161,7 +166,8 @@ the effects of higher tariffs.  In December, the 12-month change in the CPI was 
 CPI inflation was 2.6 percent; both were below their year-earlier rates.  Based on the CPI, the staff 
 estimated that total PCE price inflation was 2.9 percent in December and core PCE price inflation was 
 3.0 percent.  The staff also noted that data collection issues related to the government shutdown had 
-likely pushed down the levels of the CPI and the PCE price index in November and December. /n6    January 27–28, 2026 
+likely pushed down the levels of the CPI and the PCE price index in November and December. 
+6    January 27–28, 2026 
 Real GDP posted a solid gain in the third quarter.  Available indicators suggested that real GDP growth 
 had slowed in the fourth quarter, with the government shutdown estimated to have reduced fourth-
 quarter real GDP growth about 1 percentage point.  Real private domestic final purchases (PDFP)—
@@ -193,7 +199,8 @@ period, but risk appetite quickly recovered.  On net, foreign equity price index
 outperformed U.S. counterparts, extending last year’s trend.  Japanese government bond yields 
 increased notably because of increased political uncertainty and investor concerns over fiscal 
 prospects, but spillovers to other advanced-economy yields were modest.  The dollar depreciated 
-against most currencies.  The Japanese yen appreciated late in the intermeeting period amid /nMinutes of the Federal Open Market Committee    7 
+against most currencies.  The Japanese yen appreciated late in the intermeeting period amid 
+Minutes of the Federal Open Market Committee    7 
 speculation among market participants that authorities may intervene in foreign exchange markets to 
 support the yen.  
 Conditions in short-term funding markets were stable.  The Federal Reserve’s initiation of RMPs as 
@@ -226,7 +233,8 @@ levels.  For households, delinquency rates for most mortgage types remained near
 while those for credit card and auto loans remained above pre-pandemic levels.    
 3 The SLOOS results reported are based on banks’ responses, weighted by each bank’s outstanding loans in the respective loan 
 category, and might therefore differ from the results reported in the published SLOOS, which are based on banks’ unweighted 
-responses. /n8    January 27–28, 2026 
+responses. 
+8    January 27–28, 2026 
 The staff provided an updated assessment of the stability of the U.S. financial system and, on balance, 
 continued to characterize the system’s financial vulnerabilities as notable.  The staff judged that asset 
 valuation pressures were elevated.  Price-to-earnings ratios for public equities stood at the upper end 
@@ -259,7 +267,8 @@ The staff’s inflation forecast was slightly higher, on balance, than the one p
 meeting, reflecting the expectation that resource utilization would be tighter and the path of core 
 import prices would be higher than previously projected.  With the effect of higher tariffs on inflation 
 expected to wane starting around the middle of this year, inflation was projected to return to its 
-previous disinflationary trend. /nMinutes of the Federal Open Market Committee    9 
+previous disinflationary trend. 
+Minutes of the Federal Open Market Committee    9 
 The staff continued to view the uncertainty around the forecast as elevated in light of ongoing 
 uncertainty about geopolitical developments, government policy changes and their effects, and the 
 effect of AI on the economy.  In addition, delays in statistical releases and related data-quality issues 
@@ -292,7 +301,8 @@ response to cost pressures, including those related to tariffs.  Several partici
 possibility that sustained demand pressures could keep inflation elevated relative to the Committee’s 
 2 percent objective.   
 Participants noted that most measures of longer-term inflation expectations remained consistent with 
-the Committee’s 2 percent objective.  In addition, several participants highlighted the fact that market- /n10    January 27–28, 2026 
+the Committee’s 2 percent objective.  In addition, several participants highlighted the fact that market- 
+10    January 27–28, 2026 
 and survey-based measures of near-term inflation expectations had declined from their peaks in the 
 spring of last year.  
 With regard to the labor market, participants observed that the unemployment rate had held steady, 
@@ -326,7 +336,8 @@ couple of participants remarked that the crop sector had remained weak, while th
 had stayed strong.   
 Participants generally anticipated that the pace of economic growth would remain solid in 2026, 
 though uncertainty about the outlook for growth remained high.  Most participants expected growth to 
-be supported by continued favorable financial conditions, fiscal policy, or changes in regulatory policy. /nMinutes of the Federal Open Market Committee    11 
+be supported by continued favorable financial conditions, fiscal policy, or changes in regulatory policy. 
+Minutes of the Federal Open Market Committee    11 
 Moreover, in light of the strong pace of AI-related investment as well as the higher productivity growth 
 of recent years, several participants judged that ongoing gains in productivity would be supportive of 
 economic growth. 
@@ -361,7 +372,8 @@ that the current stance of the policy rate was still meaningfully restrictive an
 to the labor market as a more prominent policy concern than the risk of persistently elevated inflation.  
 In considering the outlook for monetary policy, several participants commented that further downward 
 adjustments to the target range for the federal funds rate would likely be appropriate if inflation were 
-to decline in line with their expectations.  Some participants commented that it would likely be /n12    January 27–28, 2026 
+to decline in line with their expectations.  Some participants commented that it would likely be 
+12    January 27–28, 2026 
 appropriate to hold the policy rate steady for some time as the Committee carefully assesses incoming 
 data, and a number of these participants judged that additional policy easing may not be warranted 
 until there was clear indication that the progress of disinflation was firmly back on track.  Several 
@@ -395,7 +407,8 @@ In support of its goals, almost all members decided to maintain the target range
 rate at 3½ to 3¾ percent.  Two members voted against that decision and preferred to lower the target 
 range by ¼ percentage point.  Members agreed that in considering the extent and timing 
 of additional adjustments to the target range for the federal funds rate, the Committee would carefully 
-assess incoming data, the evolving outlook, and the balance of risks.  Members agreed that /nMinutes of the Federal Open Market Committee    13 
+assess incoming data, the evolving outlook, and the balance of risks.  Members agreed that 
+Minutes of the Federal Open Market Committee    13 
 the postmeeting statement should affirm their strong commitment both to supporting maximum 
 employment and to returning inflation to the Committee’s 2 percent objective.   
 Members agreed that in assessing the appropriate stance of monetary policy, the 
@@ -426,7 +439,8 @@ gains have remained low, and the unemployment rate has shown some signs of stabi
 Inflation remains somewhat elevated. 
 The Committee seeks to achieve maximum employment and inflation at the rate of 2 percent 
 over the longer run.  Uncertainty about the economic outlook remains elevated.  The 
-Committee is attentive to the risks to both sides of its dual mandate. /n14    January 27–28, 2026 
+Committee is attentive to the risks to both sides of its dual mandate. 
+14    January 27–28, 2026 
 In support of its goals, the Committee decided to maintain the target range for the federal 
 funds rate at 3½ to 3¾ percent.  In considering the extent and timing of additional 
 adjustments to the target range for the federal funds rate, the Committee will carefully assess 
@@ -458,7 +472,8 @@ Attendance
 Jerome H. Powell, Chair 
 John C. Williams, Vice Chair 
 Michael S. Barr 
-Michelle W. Bowman /nMinutes of the Federal Open Market Committee    15 
+Michelle W. Bowman 
+Minutes of the Federal Open Market Committee    15 
 Lisa D. Cook 
 Beth M. Hammack 
 Philip N. Jefferson 
@@ -498,7 +513,8 @@ Marnie Gillis DeBoer,6 Senior Associate Director, Division of Monetary Affairs, 
 Wendy E. Dunn, Adviser, Division of Research and Statistics, Board 
 4 Attended through the discussion of the economic and financial situation. 
 5 Attended the discussion of the economic and financial situation. 
-6 Attended through the discussion of developments in financial markets and open market operations.  /n16    January 27–28, 2026 
+6 Attended through the discussion of developments in financial markets and open market operations.  
+16    January 27–28, 2026 
 Burcu Duygan-Bump, Senior Associate Director, Division of Research and Statistics, Board 
 Laura J. Feiveson, Special Adviser to the Board, Division of Board Members, Board 
 Erin E. Ferris, Principal Economist, Division of Monetary Affairs, Board 
@@ -531,7 +547,8 @@ Makoto Nakajima, Vice President, Federal Reserve Bank of Philadelphia
 Anna Nordstrom, Head of Markets, Federal Reserve Bank of New York 
 Giovanni Olivei, Senior Vice President, Federal Reserve Bank of Boston 
 Julio L. Ortiz, Senior Economist, Division of International Finance, Board 
-7  Attended Wednesday’s session only. /nMinutes of the Federal Open Market Committee    17 
+7  Attended Wednesday’s session only. 
+Minutes of the Federal Open Market Committee    17 
 Karen M. Pence, Deputy Associate Director, Division of Research and Statistics, Board 
 Caterina Petrucco-Littleton, Deputy Associate Director, Division of Consumer and Community Affairs, 
 Board 

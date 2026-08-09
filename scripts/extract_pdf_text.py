@@ -4,30 +4,51 @@
 from pathlib import Path
 from pypdf import PdfReader
 
+# extract text from a single PDF file
+# args: path to the PDF file
+# return: extracted from all pages
 def extract_text_from_pdf(path: str) -> str:
     reader = PdfReader(path)
     pages = []
 
-    print(f"Number of Pages: {len(reader.pages)}")
+    # print(f"Number of Pages: {len(reader.pages)}")
 
     for page in reader.pages:
         text = page.extract_text() or ""
         pages.append(text)
 
-    return "/n".join(pages)
+    return "\n".join(pages)
 
-def read_precossed_texts(input_dir: str) -> list[tuple[Path, str]]:
-    input_path = Path(input_dir)
-    txt_files = list(input_path.glob("*.txt"))
 
-    # (filename, context)
-    documents = []
-    for txt_file in txt_files:
-        text = txt_file.read_text(encoding="utf-8")
-        documents.append((txt_file, text))
+# extract text from one PDF and save it as a txt file
+def extract_pdf_to_file(pdf_path: str | Path, output_path: str | Path) -> None:
+    pdf_path = Path(pdf_path)
+    output_path = Path(output_path)
 
-    return documents
+    text = extract_text_from_pdf(pdf_path)
 
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(text, encoding="utf-8")
+
+    print(f"Processed: {pdf_path.name}")
+    print(f"Extracted {len(text)} characters")
+    print(f"Saved: {output_path}")
+
+
+# def read_precossed_texts(input_dir: str) -> list[tuple[Path, str]]:
+#     input_path = Path(input_dir)
+#     txt_files = list(input_path.glob("*.txt"))
+
+#     # (filename, context)
+#     documents = []
+#     for txt_file in txt_files:
+#         text = txt_file.read_text(encoding="utf-8")
+#         documents.append((txt_file, text))
+
+#     return documents
+
+
+# extract all PDF files in input_dir and save txt files to output_dir
 def extract_folder(input_dir: str, output_dir: str) -> None:
     input_path = Path(input_dir)
     output_path = Path(output_dir)
@@ -39,41 +60,18 @@ def extract_folder(input_dir: str, output_dir: str) -> None:
     print(f"Found {len(pdf_files)} PDF files")
 
     for pdf_file in pdf_files:
-        print(f"Processing: {pdf_file.name}")
-
-        text = extract_text_from_pdf(pdf_file)
         txt_file = output_path / pdf_file.with_suffix(".txt").name
-        txt_file.write_text(text, encoding="utf-8")
 
-        print(f"Saved: {txt_file}")
-        print(f"Extracted {len(text)} characters")
+        extract_pdf_to_file(
+            pdf_path=pdf_file,
+            output_path=txt_file,
+        )
         print("=" * 20)
 
 
 
 if __name__ == "__main__":
-    extract_folder(input_dir = "data/raw", output_dir = "data/processed")
-    documents = read_precossed_texts("data/processed")
-
-    print(f"Found {len(documents)} text files")
-
-    for txt_file, text in documents:
-        print("=" * 20)
-        print(f"File: {txt_file.name}")
-        print(f"Characters: {len(text)}")
-        print("Preview:")
-        print(text[:300])
-
-    # pdf_path = "data/raw/fomc_statement_20260429.pdf"
-    # output_path = "data/processed/fomc_statement_20260429.txt"
-    # text = extract_text_from_pdf(pdf_path)
-
-    # Path("data/processed").mkdir(parents = True, exist_ok = True)
-    # Path(output_path).write_text(text, encoding="utf-8")
-
-    # print(f"Extracted {len(text)} characters")
-    # print(f"Save to {output_path}")
-
-    # print("======== Preview ========")
-    # print(text[:1000])
-
+    extract_folder(
+        input_dir="data/raw",
+        output_dir="data/processed",
+    )
