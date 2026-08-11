@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 
-from process_document_chunks import chunk_by_sentences
+from scripts.process_document_chunks import chunk_by_sentences
 
 load_dotenv()
 

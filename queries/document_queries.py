@@ -1,7 +1,27 @@
+from sqlalchemy import text
 from sqlalchemy.sql import func
 from sqlalchemy.dialects.postgresql import insert
 
 from app.models import Document
+
+
+def get_document(conn, document_id: int):
+    result = conn.execute(
+        text("""
+            SELECT
+                id,
+                document_type,
+                raw_file_path,
+                cleaned_file_path,
+                content
+            FROM documents
+            WHERE id = :document_id
+        """),
+        {"document_id": document_id},
+    )
+
+    return result.mappings().first()
+
 
 # Upsert metadata and raw file information for an uploaded document.
 # On conflict, preserve existing processed content (and cleande file path)
@@ -40,3 +60,28 @@ def upsert_document(conn, row:dict) -> int:
 scripts/ingest_documents.py
     def upsert_documents(rows: list[dict]) -> None:
 """
+
+
+def update_document_content(
+    conn,
+    document_id: int,
+    content: str,
+    cleaned_file_path: str,
+):
+    conn.execute(
+        text("""
+            UPDATE documents
+            SET
+                cleaned_file_path = :cleaned_file_path,
+                content = :content,
+                updated_at = NOW()
+            WHERE id = :document_id
+        """),
+        {
+            "cleaned_file_path": cleaned_file_path,
+            "content": content,
+            "document_id": document_id
+        },
+    )
+
+

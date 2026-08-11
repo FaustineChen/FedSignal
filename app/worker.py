@@ -8,11 +8,17 @@
 
 import time
 import traceback
+from pathlib import Path
 
 from app.db import engine
 from app.jobs import claim_next_job, mark_job_completed, mark_job_failed
+from scripts.file_utils import save_text
+from scripts.extract_pdf_text import extract_text_from_pdf
+from scripts.clean_processed_text import clean_text
 from scripts.process_document_chunks import generate_chunks_for_document
 from scripts.process_keyword_occurrences import extract_occurrences_for_document
+from queries.document_queries import get_document, update_document_content
+
 
 def run_job(job):
     document_id = job["document_id"]
@@ -20,6 +26,38 @@ def run_job(job):
 
     if job_type == "process_document":
         with engine.begin() as conn:
+            document = get_document(conn, document_id)
+
+            if document is None:
+                raise ValueError(
+                    f"Document {document_id} not found"
+                )
+
+            if not document["content"]:
+                pdf_path = Path(document["raw_file_path"])
+                processed_path = (Path("data/processed") / pdf_path.with_suffix(".txt").name)
+                cleaned_file_path = (Path("data/cleaned") / pdf_path.with_suffix(".txt").name)
+
+                # extract
+                raw_text = extract_text_from_pdf(path=pdf_path)
+
+                # save processed txt
+                save_text(raw_text, processed_path)
+
+                # clean
+                cleaned_text = clean_text(raw_text)
+
+                # save cleaned txt
+                save_text(cleaned_text, cleaned_file_path)
+
+                # update documents.content
+                update_document_content(
+                    conn,
+                    document_id=document_id,
+                    content=cleaned_text,
+                    cleaned_file_path=str(cleaned_file_path),
+                )
+
             generate_chunks_for_document(conn, document_id)
             extract_occurrences_for_document(conn, document_id)
     
