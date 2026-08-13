@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fed Signal</title>
+</head>
+
+<body>
+    <h1>FedSignal</h1>
+
+    <section>
+        <h2>Upload Document</h2>
+    </section>
+
+    <section>
+        <h2>Search Documents</h2>
+
+        <div>
+            <label>Keyword</label>
+            <input type="text" id="keyword">
+        </div>
+
+        <div>
+            <label>Category</label>
+            <input type="text" id="category">
+        </div>
+
+        <div>
+            <label>Document Type</label>
+            <select id="document-type">
+                <option value="">All</option>
+                <option value="fomc_statement">FOMC Statement</option>
+                <option value="fomc_minutes">FOMC Minutes</option>
+                <option value="press_conference">Press Conference</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Document ID</label>
+            <input type="number" id="document-id">
+        </div>
+
+        <div>
+            <label>Start Date</label>
+            <input type="date" id="start-date">
+        </div>
+
+        <div>
+            <label>End Date</label>
+            <input type="date" id="end-date">
+        </div>
+
+        <div>
+            <label>Date Field</label>
+            <select id="date-field">
+                <option value="published">published</option>
+                <option value="event">event</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Limit</label>
+            <input type="number" id="limit" min="1" value="20">
+        </div>
+
+
+        <button id="search-matches">Search Matches</button>
+
+        <div>
+            <label>Summary By</label>
+            <select id="summary-by">
+                <option value="document">Document</option>
+                <option value="date">Date</option>
+                <option value="document_type">Document Type</option>
+                <option value="keyword">Keyword</option>
+            </select>
+        </div>
+
+        <button id="view-summary">View Summary</button>
+
+    </section>
+
+    <section>
+        <h2>Results</h2>
+        <div id="results"></div>
+    </section>
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>
+
+
