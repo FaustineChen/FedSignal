@@ -10,6 +10,169 @@
 
     <section>
         <h2>Upload Document</h2>
+
+        <form id = "upload-form">
+            <div>
+                <label for="document-upload">
+                    File <span>*</span>
+                </label>
+
+                <input
+                    type="file"
+                    id="document-upload"
+                    name="file"
+                    accept=".pdf"
+                    required
+                >
+            </div>
+        
+
+            <div>
+                <label for="upload-title">
+                    Title <span>*</span>
+                </label>
+                <input
+                    type="text"
+                    id="upload-title"
+                    name="title"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="upload-document-type">
+                    Document Type <span>*</span>
+                </label>
+
+                <select
+                    id="upload-document-type"
+                    name="document_type"
+                    required
+                >
+                    <option value="" disabled selected>
+                        -- Please select an option --
+                    </option>
+
+                    <option value="fomc_statement">
+                        FOMC Statement
+                    </option>
+
+                    <option value="fomc_minutes">
+                        FOMC Minutes
+                    </option>
+
+                    <option value="press_conference">
+                        Press Conference
+                    </option>
+                </select>
+            </div>
+
+            <div>
+                <label for="upload-published-date">
+                    Published Date <span>*</span>
+                </label>
+
+                <input
+                    type="date"
+                    id="upload-published-date"
+                    name="published_date"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="upload-start-date">
+                    Event Start Date
+                </label>
+
+                <input
+                    type="date"
+                    id="upload-start-date"
+                    name="event_start_date"
+                >
+            </div>
+
+            <div>
+                <label for="upload-end-date">
+                    Event End Date
+                </label>
+
+                <input
+                    type="date"
+                    id="upload-end-date"
+                    name="event_end_date"
+                >
+            </div>
+
+            <div>
+                <label for="upload-source">
+                    Source <span>*</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="upload-source"
+                    name="source"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="upload-speaker">
+                    Speaker
+                </label>
+
+                <input
+                    type="text"
+                    id="upload-speaker"
+                    name="speaker"
+                >
+            </div>
+
+            <div>
+                <label for="upload-speaker-position">
+                    Speaker Position
+                </label>
+
+                <input
+                    type="text"
+                    id="upload-speaker-position"
+                    name="speaker_position"
+                >
+            </div>
+
+            <div>
+                <label for="upload-chiar">
+                    Chair
+                </label>
+
+                <input
+                    type="text"
+                    id="upload-chair"
+                    name="chair"
+                >
+            </div>
+
+            <div>
+                <label for="upload-source-url">
+                    Source URL <span>*</span>
+                </label>
+
+                <input
+                    type="url"
+                    id="upload-source-url"
+                    name="source_url"
+                    required
+                >
+            </div>
+
+        <button type="submit" >
+            Upload Document
+        </button>
+        
+        </form>
+
+        <div id="upload-result"></div>
     </section>
 
     <section>

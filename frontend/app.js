@@ -2,6 +2,7 @@
 
 const matchesButton = document.getElementById("search-matches");
 const summaryButton  = document.getElementById("view-summary");
+const uploadForm = document.getElementById("upload-form");
 
 function buildCommonParams() {
     const params = new URLSearchParams();
@@ -27,6 +28,16 @@ function buildCommonParams() {
     return params;
 }
 
+async function uploadDocument(formData) {
+    const response = await fetch ("/api/documents", {
+       method: "POST",
+       body: formData
+    });
+
+    const data = await response.json();
+
+    return data;
+};
 
 async function fetchMatches(){
     const params = buildCommonParams();
@@ -58,6 +69,14 @@ async function fetchSummary() {
     const data = await response.json();
 
     return data;
+}
+
+function renderUploadResult(data) {
+    console.log(data);
+    
+    const results = document.getElementById("upload-result");
+
+    results.textContent = `Document ${data.document_id} uploaded. Job ${data.job_id}: ${data.job_status}`;
 }
 
 function renderMatches(data){
@@ -196,6 +215,22 @@ function renderSummary(data) {
 
     results.appendChild(table);
 }
+
+uploadForm.addEventListener("submit", async(event) => {
+    event.preventDefault();
+    console.log("upload submitted");
+
+    // FormData
+    const formData = new FormData(uploadForm);
+
+    // for (const [key, value] of formData.entries()) {
+    //     console.log(key, value);
+    // }
+
+    const data = await uploadDocument(formData);
+
+    renderUploadResult(data);
+});
 
 matchesButton.addEventListener("click", async () => {
     const data = await fetchMatches();
