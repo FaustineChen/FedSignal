@@ -36,7 +36,6 @@ term inflation expectations only moderately higher than they were before the ons
 
 1 The Federal Open Market Committee is referenced as the “FOMC” and the “Committee” in these minutes; the Board of
 Governors of the Federal Reserve System is referenced as the “Board” in these minutes.
-2    June 16-17, 2026
 
 Longer-term inflation expectations remained well anchored near the Committee’s 2 percent longer-run
 inflation objective.
@@ -72,7 +71,6 @@ confirming that those operations were effective in firming the floor under money
 Regarding the decline in repo rates early in the period, the manager noted several likely driving
 factors:  Reserves increased following the seasonal low around the April tax date as the Treasury
 General Account dropped, reserve management purchases added reserves and reduced the bill
-Minutes of the Federal Open Market Committee    3
 
 supply available to the public, U.S. global systemically important banks likely increased intermediation
 capacity in response to regulatory changes earlier in the year, the demand for repo financing on the
@@ -106,7 +104,6 @@ of the previous year.  Nonfarm payroll employment rose at a solid pace in the th
 May.  The 12-month change in the employment cost index for private-sector workers was 3.4 percent
 through March, the same as its year-earlier pace.  Average hourly earnings increased 3.4 percent over
 the 12 months ending in May, 0.5 percentage point lower than a year earlier.
-4    June 16-17, 2026
 
 Available indicators suggested that real GDP growth continued at a solid pace in the second quarter.
 Real private domestic final purchases— which comprises PCE and private fixed investment and which
@@ -140,7 +137,6 @@ remained well anchored.
 Broad equity price indexes increased notably, boosted by robust corporate earnings and further
 investor optimism surrounding AI implications for corporate profitability, despite the headwind of
 higher yields.  Consistent with improved risk sentiment, the VIX— a forward-looking measure of near-
-Minutes of the Federal Open Market Committee    5
 
 term equity market volatility— declined slightly to below the median of its historical distribution, while
 corporate bond spreads narrowed somewhat.
@@ -175,7 +171,6 @@ projected to step down next year, as some of the factors lifting inflation this 
 expected to wane, and then move down further to about 2 percent in 2028.
 The staff’s outlook for real GDP growth was a bit lower than the one prepared for the previous
 meeting, mostly reflecting incoming data.  Real GDP was forecast to expand at about the same pace
-6    June 16-17, 2026
 
 as potential this year and to slightly outpace potential over the next two years, buttressed by
 persistently strong productivity growth, continued gains in AI-related capital spending, and supportive
@@ -210,7 +205,6 @@ The majority of participants commented that most measures of medium- and longer-
 expectations remained at levels consistent with the Committee’s 2 percent objective.  Participants
 noted the importance of stable longer-term inflation expectations and emphasized the Committee’s
 role in keeping those expectations anchored at levels consistent with 2 percent inflation.
-Minutes of the Federal Open Market Committee    7
 
 Participants anticipated that inflation would remain elevated in the near term and then begin to
 decline as the effects of tariffs and energy price increases wane and other supply disruptions related
@@ -247,7 +241,6 @@ that the labor market was not currently a source of inflationary pressures, or t
 growth remained consistent with inflation moving toward 2 percent.
 Participants generally expected labor market conditions to remain stable in the near term, with the
 unemployment rate staying close to current levels.  Some participants remarked that their concerns
-8    June 16-17, 2026
 
 earlier this year about labor market deterioration had eased with recent data, and several participants
 noted that the solid payroll employment data in recent months could signal increased labor market
@@ -284,7 +277,6 @@ had appeared stable.  Participants observed that inflation was elevated relative
 including energy.  Participants generally assessed that information received over the intermeeting
 period suggested that upside risks to price stability remained elevated while downside risks to
 achieving maximum employment had moderated a bit.  A few participants commented that, in light of
-Minutes of the Federal Open Market Committee    9
 
 these developments, there was a case for raising the target range for the federal funds rate, but those
 participants indicated that they supported maintaining the current target range at this meeting.
@@ -319,7 +311,6 @@ In support of the Committee’s dual-mandate goals, all members agreed to mainta
 for the federal funds rate at 3½ to 3¾ percent and to reaffirm the FOMC’s policy of maintaining ample
 reserves in the banking system.  Members also agreed that the statement would not repeat the
 language that had suggested an easing bias regarding the likely direction of the Committee’s future
-10    June 16-17, 2026
 
 interest rate decisions.  Members noted that there had been little change in the unemployment rate
 and solid growth in economic activity, but that inflation remained elevated relative to the Committee’s
@@ -350,7 +341,6 @@ policy of maintaining ample reserves in the banking system.
 Economic activity is expanding at a solid pace despite elevated uncertainty that owes, in part,
 to the conflict in the Middle East.  Productivity growth and capital investment are strong.  Job
 gains have kept pace with the workforce, and the unemployment rate has changed little.
-Minutes of the Federal Open Market Committee    11
 
 Inflation remains elevated relative to the Committee’s 2 percent goal, in part reflecting supply
 shocks that have driven price increases in certain sectors, including energy.  The Committee
@@ -388,7 +378,6 @@ Susan M. Collins, Alberto G. Musalem, and Jeffrey R. Schmid, Presidents of the F
 of Boston, St. Louis, and Kansas City, respectively
 Joshua Gallin, Secretary
 Matthew M. Luecke, Deputy Secretary
-12    June 16-17, 2026
 
 Michelle A. Smith, Assistant Secretary
 Mark E. Van Der Weide, General Counsel
@@ -427,7 +416,6 @@ Erik Heitfield, Deputy Associate Director, Division of Research and Statistics, 
 2 Attended through the discussion of developments in financial markets and open market operations.
 3 Attended Wednesday’s session only.
 4 Attended Tuesday’s session only.
-Minutes of the Federal Open Market Committee    13
 
 Valerie S. Hinojosa, Assistant Director, Division of Monetary Affairs, Board
 Jane E. Ihrig, Special Adviser to the Board, Division of Board Members, Board
@@ -462,7 +450,6 @@ Jeffrey D. Walker,2 Senior Associate Director, Division of Reserve Bank Operatio
 Systems, Board
 Jonathan Willis, Vice President, Federal Reserve Bank of Atlanta
 Paul Winfree, Assistant to the Chairman (Special Projects), Division of Board Members, Board
-14    June 16-17, 2026
 
 Emre Yoldas, Deputy Associate Director, Division of International Finance, Board
 Egon Zakrajšek, Executive Vice President, Federal Reserve Bank of Boston

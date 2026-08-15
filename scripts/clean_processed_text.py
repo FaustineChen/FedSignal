@@ -3,10 +3,13 @@ from pathlib import Path
 import re
 
 def remove_minutes_headers_footers(line: str) -> str:
+
+    # original = line
+
     # odd page
     # "... Minutes of the Federal Open Market Committee    3"
     line = re.sub(
-        r"\s+Minutes of the Federal Open Market Committee\s+\d+\s*$",
+        r"^\s*Minutes of the Federal Open Market Committee\s+\d+\s*$",
         "",
         line
     )
@@ -14,10 +17,17 @@ def remove_minutes_headers_footers(line: str) -> str:
     # even page
     # "... 2    April 28–29, 2026"
     line = re.sub(
-        r"\s+\d+\s+[A-Z][a-z]+ \d{1,2}[\u2013-]\d{1,2}, \d{4}\s*$",
+        r"^\s*\d+\s+[A-Z][a-z]+ "
+        r"\d{1,2}[-\u2011\u2013\u2014]\d{1,2}, \d{4}\s*$",
         "",
         line
     )
+
+    # cleaned = line.strip()
+
+    # if original != cleaned:
+    #     print("REMOVED:", repr(original), "->", repr(cleaned))
+
 
     return line.strip()
 
@@ -32,8 +42,21 @@ def remove_statement_and_press_headers(line: str) -> str:
 
     # press conference
     # "April 29, 2026   Chair Powell’s Press Conference  FINAL"
+    # "June 17, 2026   Chairman Warsh’s Press Conference  FINAL"
+    # line = re.sub(
+    #     r"\s*[A-Z][a-z]+ \d{1,2}, \d{4}\s+Chair Powell[’']s Press Conference\s+FINAL\s*$",
+    #     "",
+    #     line
+    # )
+    # line = re.sub(
+    #     r"\s*[A-Z][a-z]+ \d{1,2}, \d{4}\s+Chairman Warsh[’']s Press Conference\s+FINAL\s*$",
+    #     "",
+    #     line
+    # )
     line = re.sub(
-        r"\s*[A-Z][a-z]+ \d{1,2}, \d{4}\s+Chair Powell[’']s Press Conference\s+FINAL\s*$",
+        r"\s*[A-Z][a-z]+ \d{1,2}, \d{4}"
+        r"\s+Chair(?:man)?\s+[A-Z][a-z]+[’']s Press Conference"
+        r"\s+FINAL\s*$",
         "",
         line
     )
@@ -59,6 +82,14 @@ def clean_text(text: str) -> str:
         
         # remove footer/header of minutes
         line = remove_minutes_headers_footers(line)
+
+        # if "Minutes of the Federal Open Market Committee" in line:
+        #     print("STILL EXISTS AFTER CLEAN:", repr(line))
+
+        # if re.search(r"\d+\s+[A-Z][a-z]+ \d{1,2}[-\u2011\u2013\u2014]\d{1,2}, \d{4}", line):
+        #     print("DATE FOOTER STILL EXISTS AFTER CLEAN:", repr(line))
+
+
         if line == "":
             cleaned_lines.append("")
             continue
@@ -107,7 +138,7 @@ def clean_text_file(input_path: str | Path, output_path: str | Path) -> None:
     cleaned_text = clean_text(text)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(text, encoding="utf-8")
+    output_path.write_text(cleaned_text, encoding="utf-8")
 
     print(f"Processed: {input_path.name}")
     print(f"Original characters: {len(text)}")
@@ -134,3 +165,4 @@ def clean_folder (input_dir: str, output_dir: str) -> None:
 
 if __name__ == "__main__":
     clean_folder(input_dir = "data/processed", output_dir = "data/cleaned")
+    # clean_folder(input_dir="data/processed", output_dir="data/cleaned_test")
