@@ -3,6 +3,7 @@
 
 <head>
     <title>Fed Signal</title>
+    <link rel="stylesheet" href="/static/style.css"/>
 </head>
 
 <body>
@@ -12,7 +13,7 @@
         <h2>Upload Document</h2>
 
         <form id = "upload-form">
-            <div>
+            <div class="form-field">
                 <label for="document-upload">
                     File <span>*</span>
                 </label>
@@ -27,7 +28,7 @@
             </div>
         
 
-            <div>
+            <div class="form-field">
                 <label for="upload-title">
                     Title <span>*</span>
                 </label>
@@ -39,7 +40,7 @@
                 >
             </div>
 
-            <div>
+            <div class="form-field">
                 <label for="upload-document-type">
                     Document Type <span>*</span>
                 </label>
@@ -67,7 +68,7 @@
                 </select>
             </div>
 
-            <div>
+            <div class="form-field">
                 <label for="upload-published-date">
                     Published Date <span>*</span>
                 </label>
@@ -80,7 +81,7 @@
                 >
             </div>
 
-            <div>
+            <div class="form-field">
                 <label for="upload-start-date">
                     Event Start Date
                 </label>
@@ -92,7 +93,7 @@
                 >
             </div>
 
-            <div>
+            <div class="form-field">
                 <label for="upload-end-date">
                     Event End Date
                 </label>
@@ -104,7 +105,7 @@
                 >
             </div>
 
-            <div>
+            <div class="form-field">
                 <label for="upload-source">
                     Source <span>*</span>
                 </label>
@@ -117,7 +118,7 @@
                 >
             </div>
 
-            <div>
+            <div class="form-field">
                 <label for="upload-speaker">
                     Speaker
                 </label>
@@ -129,7 +130,7 @@
                 >
             </div>
 
-            <div>
+            <div class="form-field">
                 <label for="upload-speaker-position">
                     Speaker Position
                 </label>
@@ -141,7 +142,7 @@
                 >
             </div>
 
-            <div>
+            <div class="form-field">
                 <label for="upload-chiar">
                     Chair
                 </label>
@@ -153,7 +154,7 @@
                 >
             </div>
 
-            <div>
+            <div class="form-field">
                 <label for="upload-source-url">
                     Source URL <span>*</span>
                 </label>
@@ -178,17 +179,17 @@
     <section>
         <h2>Search Documents</h2>
 
-        <div>
+        <div class="form-field">
             <label>Keyword</label>
             <input type="text" id="keyword">
         </div>
 
-        <div>
+        <div class="form-field">
             <label>Category</label>
             <input type="text" id="category">
         </div>
 
-        <div>
+        <div class="form-field">
             <label>Document Type</label>
             <select id="document-type">
                 <option value="">All</option>
@@ -198,22 +199,22 @@
             </select>
         </div>
 
-        <div>
+        <div class="form-field">
             <label>Document ID</label>
             <input type="number" id="document-id">
         </div>
 
-        <div>
+        <div class="form-field">
             <label>Start Date</label>
             <input type="date" id="start-date">
         </div>
 
-        <div>
+        <div class="form-field">
             <label>End Date</label>
             <input type="date" id="end-date">
         </div>
 
-        <div>
+        <div class="form-field">
             <label>Date Field</label>
             <select id="date-field">
                 <option value="published">published</option>
@@ -221,25 +222,36 @@
             </select>
         </div>
 
-        <div>
+        <div class="form-field">
             <label>Limit</label>
-            <input type="number" id="limit" min="1" value="20">
+            <!-- <input type="number" id="limit" min="1" value="20"> -->
+            <select id="limit">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
         </div>
 
 
         <button id="search-matches">Search Matches</button>
 
-        <div>
-            <label>Summary By</label>
-            <select id="summary-by">
-                <option value="document">Document</option>
-                <option value="date">Date</option>
-                <option value="document_type">Document Type</option>
-                <option value="keyword">Keyword</option>
-            </select>
+        <div class="summary-area">
+            <h3>Summary</h3>
+            <div class="form-field">
+                <label>Summary By</label>
+                <select id="summary-by">
+                    <option value="document">Document</option>
+                    <option value="date">Date</option>
+                    <option value="document_type">Document Type</option>
+                    <option value="keyword">Keyword</option>
+                </select>                
+            </div>
+
+            <button id="view-summary">View Summary</button>
         </div>
 
-        <button id="view-summary">View Summary</button>
+        
 
     </section>
 

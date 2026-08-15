@@ -90,22 +90,22 @@ function renderMatches(data){
         return;
     }
 
-    const keyword = document.getElementById("keyword").value;
-    const category = document.getElementById("category").value;
+    const keywordInput = document.getElementById("keyword").value;
+    const categoryInput = document.getElementById("category").value;
 
     const summary = document.createElement("p");
 
     let summaryText = "";
 
-    if (keyword) {
-        summaryText += `Keyword: ${keyword}`;
-    }
+    if (keywordInput) {
+        summaryText += `Keyword: ${keywordInput}`;
 
-    if (category) {
-        if (summaryText) {
-            summaryText += " | ";
+        // category comes from API result
+        if (data[0].category) {
+            summaryText += ` | Category: ${data[0].category}`;
         }
-        summaryText += `Category: ${category}`;
+    } else if (categoryInput) {
+        summaryText += `Category: ${categoryInput}`;
     }
 
     summaryText += ` | ${data.length} matches`;
