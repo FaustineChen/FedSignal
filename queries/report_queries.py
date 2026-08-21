@@ -99,7 +99,7 @@ def query_matched_sentences(
     start_date=None,
     end_date=None,
     date_field="published",
-    limit=20,
+    limit: int | None = 20,
 ):
     conditions, params = build_base_conditions(
         keyword=keyword,
@@ -113,7 +113,11 @@ def query_matched_sentences(
 
     where_clause = " AND ".join(conditions)
 
-    params["limit"] = limit
+    if limit is not None:
+        params["limit"] = limit
+        limit_clause = "LIMIT :limit"
+    else:
+        limit_clause = ""
 
     sql = text(f"""
         SELECT
@@ -146,7 +150,7 @@ def query_matched_sentences(
             d.id,
             dc.chunk_index,
             ko.sentence_index
-        LIMIT :limit
+        {limit_clause}
     """)
 
     with engine.connect() as conn:
@@ -162,7 +166,7 @@ def query_summary(
     end_date=None,
     date_field="published",
     summary_by="document",
-    limit=20
+    limit: int | None = 20,
 ):
     conditions, params = build_base_conditions(
         keyword=keyword,
@@ -232,7 +236,12 @@ def query_summary(
     else:
         raise ValueError(f"Unsupported summary_by: {summary_by}")
 
-    params["limit"] = limit
+    if limit is not None:
+        params["limit"] = limit
+        limit_clause = "LIMIT :limit"
+    else:
+        limit_clause = ""
+
     where_clause = " AND ".join(conditions)
 
     sql = text(f"""
@@ -248,7 +257,7 @@ def query_summary(
             {group_by_clause}
         ORDER BY
             {order_by_clause}
-        LIMIT :limit
+        {limit_clause}
     """)
 
     with engine.connect() as conn:

@@ -48,6 +48,26 @@ button {
     cursor: pointer;
 }
 
+.action-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.export-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hint {
+    margin-left: 8px;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 8px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;

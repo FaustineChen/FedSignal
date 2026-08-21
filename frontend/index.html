@@ -231,10 +231,18 @@
                 <option value="50">50</option>
                 <option value="100">100</option>
             </select>
+
+            <span class="hint">Display only</span>
         </div>
 
+        <div class="action-row">
+            <button id="search-matches">Search Matches</button>
 
-        <button id="search-matches">Search Matches</button>
+            <div class="export-action">
+                <button id="export-search-matches">Export CSV</button>
+                <span class="hint">Downloads all matching results</span>
+            </div>
+        </div>
 
         <div class="summary-area">
             <h3>Summary</h3>
@@ -248,7 +256,14 @@
                 </select>                
             </div>
 
-            <button id="view-summary">View Summary</button>
+            <div class="action-row">
+                <button id="view-summary">View Summary</button>
+
+                <div class="export-action">
+                    <button id="export-view-summary">Export CSV</button>
+                    <span class="hint">Downloads all matching results</span>
+                </div>
+            </div>
         </div>
 
         

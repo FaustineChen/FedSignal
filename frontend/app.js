@@ -2,9 +2,11 @@
 
 const matchesButton = document.getElementById("search-matches");
 const summaryButton  = document.getElementById("view-summary");
+const exportMatchesButton = document.getElementById("export-search-matches");
+const exportSummaryButton  = document.getElementById("export-view-summary");
 const uploadForm = document.getElementById("upload-form");
 
-function buildCommonParams() {
+function buildCommonParams(includeLimit = true) {
     const params = new URLSearchParams();
 
     const keyword = document.getElementById("keyword").value;
@@ -23,7 +25,7 @@ function buildCommonParams() {
     if (startDate) params.append("start_date", startDate);
     if (endDate) params.append("end_date", endDate);
     if (dateField) params.append("date_field", dateField);
-    if (limit) params.append("limit", limit);
+    if (includeLimit && limit) params.append("limit", limit);
 
     return params;
 }
@@ -216,6 +218,26 @@ function renderSummary(data) {
     results.appendChild(table);
 }
 
+function exportMatches() {
+    const params = buildCommonParams(false);
+
+    window.location.href =
+        `/api/reports/matches/export?${params.toString()}`;
+}
+
+
+function exportSummary() {
+    const params = buildCommonParams(false);
+
+    const summaryBy = document.getElementById("summary-by").value;
+   
+    if (summaryBy) {
+        params.append("summary_by", summaryBymaryBy);
+    }
+
+    window.location.href = `/api/reports/summary/export?${params.toString()}`;
+}
+
 uploadForm.addEventListener("submit", async(event) => {
     event.preventDefault();
     console.log("upload submitted");
@@ -240,5 +262,14 @@ matchesButton.addEventListener("click", async () => {
 summaryButton.addEventListener("click", async () => {
     const data = await fetchSummary();
     renderSummary(data);
+});
+
+exportMatchesButton.addEventListener("click", () => {
+    console.log("Click matches export.")
+    exportMatches();
+});
+
+exportSummaryButton.addEventListener("click", () => {
+    exportSummary();
 });
 
